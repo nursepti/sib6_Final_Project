@@ -1,0 +1,529 @@
+[2024-06-30T14:30:57.490+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_sentiment_analysis.sa_load manual__2024-06-30T14:16:47.480571+00:00 [queued]>
+[2024-06-30T14:30:57.512+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_sentiment_analysis.sa_load manual__2024-06-30T14:16:47.480571+00:00 [queued]>
+[2024-06-30T14:30:57.514+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 2
+[2024-06-30T14:30:57.547+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): sa_load> on 2024-06-30 14:16:47.480571+00:00
+[2024-06-30T14:30:57.573+0000] {standard_task_runner.py:60} INFO - Started process 211 to run task
+[2024-06-30T14:30:57.573+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_sentiment_analysis', 'sa_load', 'manual__2024-06-30T14:16:47.480571+00:00', '--job-id', '75', '--raw', '--subdir', 'DAGS_FOLDER/dag_sentiment_analysis.py', '--cfg-path', '/tmp/tmpb9xsw63r']
+[2024-06-30T14:30:57.577+0000] {standard_task_runner.py:88} INFO - Job 75: Subtask sa_load
+[2024-06-30T14:30:57.610+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-06-30T14:30:57.656+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_sentiment_analysis.sa_load manual__2024-06-30T14:16:47.480571+00:00 [running]> on host 84dc93550406
+[2024-06-30T14:30:57.772+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='de-team' AIRFLOW_CTX_DAG_ID='dag_sentiment_analysis' AIRFLOW_CTX_TASK_ID='sa_load' AIRFLOW_CTX_EXECUTION_DATE='2024-06-30T14:16:47.480571+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-30T14:16:47.480571+00:00'
+[2024-06-30T14:30:59.434+0000] {logging_mixin.py:188} INFO - Pinged your deployment. You successfully connected to MongoDB!
+[2024-06-30T14:31:02.008+0000] {logging_mixin.py:188} INFO - Summary Micron stands to benefit from pricing trends in the memory market — even if it weren’t to do any high-bandwidth-memory shipments next year. successfully analized
+[2024-06-30T14:31:02.010+0000] {logging_mixin.py:188} INFO - Summary In 2023, median CEO pay hit $16.3 million while the median S&amp;P employee earned $81,467, according to new research from C-Suite Comp and Equilar. successfully analized
+[2024-06-30T14:31:02.011+0000] {logging_mixin.py:188} INFO - Summary Former U.S. Treasury Secretary Larry Summers took aim Monday at some in the progressive movement who he said are not taking seriously the costs associated with government programs aimed at creating jobs and boosting economic growth. successfully analized
+[2024-06-30T14:31:02.012+0000] {logging_mixin.py:188} INFO - Summary If you're interested in taking on some administrative work, consider virtual assisting, data entry or research. successfully analized
+[2024-06-30T14:31:02.013+0000] {logging_mixin.py:188} INFO - Summary Carnival also signaled smooth seas ahead for its financial performance, with advance bookings for 2025 now running ahead of 2024 in both prices and occupancy. successfully analized
+[2024-06-30T14:31:02.014+0000] {logging_mixin.py:188} INFO - Summary Consumer confidence fell slightly in June and reflected the ongoing  uncertainty among Americans about the future of the economy successfully analized
+[2024-06-30T14:31:02.015+0000] {logging_mixin.py:188} INFO - Summary “My wife and I are not financial wizards.” successfully analized
+[2024-06-30T14:31:02.017+0000] {logging_mixin.py:188} INFO - Summary Europe’s most valuable company said Chinese regulators have approved its marketing application to sell Wegovy as a long-term weight-loss treatment for patients with obesity. successfully analized
+[2024-06-30T14:31:02.018+0000] {logging_mixin.py:188} INFO - Summary The Federal Reserve should not be considering cutting interest rates given the continued risk that inflation remain sticky or even move higher, Fed Governor Michelle Bowman said Tuesday. successfully analized
+[2024-06-30T14:31:02.020+0000] {logging_mixin.py:188} INFO - Summary Scott Mautz, a former senior executive of Procter & Gamble, has spent 30 years studying what makes people mentally strong. successfully analized
+[2024-06-30T14:31:02.021+0000] {logging_mixin.py:188} INFO - Summary Wanted: an honest talk with Americans about social services, retirement and how much in taxes we’re prepared to pay. successfully analized
+[2024-06-30T14:31:02.022+0000] {logging_mixin.py:188} INFO - Summary Americans' 401(k)s are growing — but most workers still don't have enough money in their workplace accounts to cover the costs of retirement, says a new report. successfully analized
+[2024-06-30T14:31:02.024+0000] {logging_mixin.py:188} INFO - Summary “It’s not as if they’re cashing out,” analysts say, but executives are “very comfortable” selling stock near $130. successfully analized
+[2024-06-30T14:31:02.025+0000] {logging_mixin.py:188} INFO - Summary The Nasdaq was looking to bounce at Tuesday's open after having its worst session since April. successfully analized
+[2024-06-30T14:31:02.027+0000] {logging_mixin.py:188} INFO - Summary A commitment by Federal Reserve Chairman Jerome Powell to  revise capital requirements for the U.S.’s largest banks will likely delay any changes until after the fall election season, analysts at TD Cowen said. successfully analized
+[2024-06-30T14:31:02.028+0000] {logging_mixin.py:188} INFO - Summary Case-Shiller 20-city home price index rose 7.2% year-on-year in April. successfully analized
+[2024-06-30T14:31:02.030+0000] {logging_mixin.py:188} INFO - Summary Activist investor Starboard Value has a $500 million stake in Autodesk and seeks clarity on an internal investigation which hit the company's stock hard. successfully analized
+[2024-06-30T14:31:02.031+0000] {logging_mixin.py:188} INFO - Summary The Fed’s annual stress tests are important to bank shareholders because they have an impact on dividends and stock buybacks, which typically enrich the value of share prices. successfully analized
+[2024-06-30T14:31:02.033+0000] {logging_mixin.py:188} INFO - Summary The Delta One lounge is the airline's latest effort to reel in customers and offers perks like massages, showers and a high-end restaurant. successfully analized
+[2024-06-30T14:31:02.034+0000] {logging_mixin.py:188} INFO - Summary Delta is the most profitable U.S. airline and says it continues to beat rivals as more travelers pay up for premium cabins. successfully analized
+[2024-06-30T14:31:02.036+0000] {logging_mixin.py:188} INFO - Summary You don’t want to have too little coverage or too much — but it’s almost impossible to know the ‘Goldilocks’ amount without crunching a lot of data. successfully analized
+[2024-06-30T14:31:02.037+0000] {logging_mixin.py:188} INFO - Summary Oil futures were lower Tuesday morning, consolidating after front-month Brent ended the previous session at a nearly two-month high, buoyed in part by geopolitical worries. successfully analized
+[2024-06-30T14:31:02.038+0000] {logging_mixin.py:188} INFO - Summary The company will make free fixes but isn’t aware of crashes, injuries or deaths related to either matter. successfully analized
+[2024-06-30T14:31:02.039+0000] {logging_mixin.py:188} INFO - Summary Foolish traders are indirectly funding GameStop’s balance sheet. successfully analized
+[2024-06-30T14:31:02.040+0000] {logging_mixin.py:188} INFO - Summary Roaring Kitty’s reappearance is about so much more than just one stock. successfully analized
+[2024-06-30T14:31:02.041+0000] {logging_mixin.py:188} INFO - Summary Ed Yardeni: Ignore the inverted yield curve — this “Roaring 2020s” market is alive and well. successfully analized
+[2024-06-30T14:31:02.043+0000] {logging_mixin.py:188} INFO - Summary Fundstrat’s Mark Newton sees a short-lived tech and market selloff running its course and urges a focus on some other sectors largely ignored up to now successfully analized
+[2024-06-30T14:31:02.044+0000] {logging_mixin.py:188} INFO - Summary Walmart Inc. and Amazon.com Inc. have announced their competing summer shopping events, offering discounts on a wide range of goods to inflation-weary consumers. successfully analized
+[2024-06-30T14:31:02.045+0000] {logging_mixin.py:188} INFO - Summary “I once complimented my daughter and her partner on a nice plant in their garage and they started laughing, and told me it was marijuana.” successfully analized
+[2024-06-30T14:31:02.047+0000] {logging_mixin.py:188} INFO - Summary Something unusual is happening on Wall Street that is helping to boost the confidence of stock-market bulls as the first half of 2024 comes to a close. successfully analized
+[2024-06-30T14:31:02.049+0000] {logging_mixin.py:188} INFO - Summary Merck & Co called off a Phase III trial of its promising cancer drug Xevinapant after an independent panel concluded it is unlikely to meet its goals successfully analized
+[2024-06-30T14:31:02.050+0000] {logging_mixin.py:188} INFO - Summary The power couple’s mansion boasts eight bedrooms, 11.5 baths, and more than 11,600 square feet on 12 acres. successfully analized
+[2024-06-30T14:31:02.052+0000] {logging_mixin.py:188} INFO - Summary Airbus said supply chain issues will see it deliver fewer planes this year and lead to a slower-than-expected increase in production of its A320 aircraft successfully analized
+[2024-06-30T14:31:02.053+0000] {logging_mixin.py:188} INFO - Summary Bond yields were fractionally firmer as investors parsed comments from Federal Reserve officials and looked ahead to inflation data later in the week. successfully analized
+[2024-06-30T14:31:02.054+0000] {logging_mixin.py:188} INFO - Summary  successfully analized
+[2024-06-30T14:31:02.055+0000] {logging_mixin.py:188} INFO - Summary It’s a way of indulging without overindulging, said Whole Foods CEO Jason Buechel successfully analized
+[2024-06-30T14:31:02.056+0000] {logging_mixin.py:188} INFO - Summary After getting close to a more than $4 billion all-cash deal over the weekend, jet maker Boeing Co. is now proposing using stock to buy jet-parts manufacturer Spirit AeroSystems Holdings Inc., the Wall Street Journal reported on Monday. successfully analized
+[2024-06-30T14:31:02.057+0000] {logging_mixin.py:188} INFO - Summary A major initiative by the Biden administration to lower student-loan payments and provide debt cancellation to more borrowers is in jeopardy after two courts temporarily blocked parts of the plan. successfully analized
+[2024-06-30T14:31:02.058+0000] {logging_mixin.py:188} INFO - Summary CNBC's Jim Cramer on Monday reviewed recent earnings from two major homebuilding companies, Lennar and KB Home. successfully analized
+[2024-06-30T14:31:02.059+0000] {logging_mixin.py:188} INFO - Summary CNBC's Jim Cramer noted that Monday was tough for Big Tech, but expressed continued faith in the success of the megacaps in that sector. successfully analized
+[2024-06-30T14:31:02.060+0000] {logging_mixin.py:188} INFO - Summary The company, home to brands such as CBS, MTV, Nickelodeon and the Paramount film studio, said the new price will go into effect Aug. 20 for all new Paramount+ customers and for existing subscribers with its higher-priced offering on or after Sept. 20. successfully analized
+[2024-06-30T14:31:02.061+0000] {logging_mixin.py:188} INFO - Summary Shares of Birkenstock Holding fell after hours on Monday after the iconic sandal maker said its biggest shareholder would offload some of its investments in the company through a public offering. successfully analized
+[2024-06-30T14:31:02.062+0000] {logging_mixin.py:188} INFO - Summary Swimming-pool gear distributor Pool Corp. on Monday slashed its profit outlook for this year, citing “persistently weak” demand for new pool construction, sending shares sharply lower in after-hours trade. successfully analized
+[2024-06-30T14:31:02.063+0000] {logging_mixin.py:188} INFO - Summary Former Treasury Secretary Larry Summers on Monday took aim at the Federal Reserve’s strategy for defeating inflation, while also taking credit for predicting last year that markets and policymakers were overstating the likelihood of several interest-rate cuts in 2024. successfully analized
+[2024-06-30T14:31:02.064+0000] {logging_mixin.py:188} INFO - Summary Are rising jobless claims a sign of emerging weakness in the economy? Don’t bet on it — at least not yet. successfully analized
+[2024-06-30T14:31:02.066+0000] {logging_mixin.py:188} INFO - Summary “Recent election surprises in Mexico, India, and the European Union have underscored the volatility that can arise from unforeseen political outcomes,” Principal Asset Management’s Seema Shah said. successfully analized
+[2024-06-30T14:31:02.067+0000] {logging_mixin.py:188} INFO - Summary The brewer of Corona and Modelo is among the best positioned beer makers to gain coveted display space in stores, according to Jefferies. successfully analized
+[2024-06-30T14:31:02.068+0000] {logging_mixin.py:188} INFO - Summary  successfully analized
+[2024-06-30T14:31:02.069+0000] {logging_mixin.py:188} INFO - Summary Credit unions have become a go-to source of financing for owners looking to pull equity out of their homes. successfully analized
+[2024-06-30T14:31:02.070+0000] {logging_mixin.py:188} INFO - Summary Bank stocks gained Monday after Bloomberg News reported that the U.S. Federal Reserve is circulating a lighter version of its proposed capital requirements that have drawn opposition from the industry. successfully analized
+[2024-06-30T14:31:02.071+0000] {logging_mixin.py:188} INFO - Summary Apple shares bounced Monday after last week's three-session losing streak. successfully analized
+[2024-06-30T14:31:02.072+0000] {logging_mixin.py:188} INFO - Summary Novo Nordisk on Monday said it will invest $4.1 billion in a new Clayton, N.C., manufacturing facility as it works to meet surging demand for its popular injectable drugs Wegovy and Ozempic. successfully analized
+[2024-06-30T14:31:02.073+0000] {logging_mixin.py:188} INFO - Summary Disney and Pixar's "Inside Out 2" is the highest-grossing film of 2024 and soon could be the first since Warner Bros.' "Barbie" to surpass $1 billion globally. successfully analized
+[2024-06-30T14:31:02.073+0000] {logging_mixin.py:188} INFO - Summary A viral video spurred discussion over how much money young people really keep in their savings accounts. Here’s what personal-finance experts said. successfully analized
+[2024-06-30T14:31:02.074+0000] {logging_mixin.py:188} INFO - Summary Recent volatility in Nvidia Corp.’s stock is bringing back memories from the start of this century, when companies like Cisco Systems Inc. and Intel Corp. saw their shares crash and never fully recover after the dot-com bubble burst. successfully analized
+[2024-06-30T14:31:02.075+0000] {logging_mixin.py:188} INFO - Summary Investors are facing an intense stretch of political events over the next three weeks, ranging from Thursday’s debate between President Joe Biden and Republican Donald Trump to elections in France, the U.K., and Iran. successfully analized
+[2024-06-30T14:31:02.076+0000] {logging_mixin.py:188} INFO - Summary Sora Lee didn't plan on going into tech after college. Here's what she's learned working at Netflix, Meta and TikTok, and how much money she's made. successfully analized
+[2024-06-30T14:31:02.077+0000] {logging_mixin.py:188} INFO - Summary Demand for software engineers is still strong, but AI will begin to change that. successfully analized
+[2024-06-30T14:31:02.079+0000] {logging_mixin.py:188} INFO - Summary There has been a stark divide in the U.S. stock market recently between winners and losers. Morgan Stanley’s top equity strategist, Michael Wilson, expects the winners to keep on winning — and he is recommending that clients keep their portfolios positioned accordingly. successfully analized
+[2024-06-30T14:31:02.080+0000] {logging_mixin.py:188} INFO - Summary “He changed his will, leaving his new wife his share of the estate, plus all of the contents of the house, including family heirlooms.” successfully analized
+[2024-06-30T14:31:02.081+0000] {logging_mixin.py:188} INFO - Summary Ferrari is opening a new E-Building in Maranello, Italy, that will produce internal combustion engine cars alongside hybrid and all-electric models. successfully analized
+[2024-06-30T14:31:02.082+0000] {logging_mixin.py:188} INFO - Summary The U.S. stock market may be in a melt-up, with two sectors in the S&P 500 swelling to a high level seen before the technology bubble burst in early 2000, according to Yardeni Research. successfully analized
+[2024-06-30T14:31:02.084+0000] {logging_mixin.py:188} INFO - Summary Coinbase Global Inc. may be at risk of a regulatory enforcement action over its accounting for crypto assets, according to accounting experts, who reviewed the crypto trading site’s numbers before and after it opted for early adoption of a new rule. successfully analized
+[2024-06-30T14:31:02.085+0000] {logging_mixin.py:188} INFO - Summary Yardeni: Even the bulls are getting trampled by the tech-sector-led U.S. market. A meltup could be coming. successfully analized
+[2024-06-30T14:31:02.087+0000] {logging_mixin.py:188} INFO - Summary They would improve transparency and most likely returns by investing in index funds successfully analized
+[2024-06-30T14:31:02.088+0000] {logging_mixin.py:188} INFO - Summary The wholesale chain has more than 130 million members around the world. successfully analized
+[2024-06-30T14:31:02.090+0000] {logging_mixin.py:188} INFO - Summary BofA sees plenty of reasons to like Broadcom’s stock, including its management team, growth profile and free-cash-flow yield. successfully analized
+[2024-06-30T14:31:02.091+0000] {logging_mixin.py:188} INFO - Summary Mt. Gox holds over 140,000 bitcoins. Investors recouping stolen assets could cash in on the rally in the past decade. successfully analized
+[2024-06-30T14:31:02.092+0000] {logging_mixin.py:188} INFO - Summary The Investing Club holds its "Morning Meeting" every weekday at 10:20 a.m. ET. successfully analized
+[2024-06-30T14:31:02.093+0000] {logging_mixin.py:188} INFO - Summary Only four of the 10 largest S&P 500 stocks are in the Dow. successfully analized
+[2024-06-30T14:31:02.095+0000] {logging_mixin.py:188} INFO - Summary ResMed and Inspire Medical make devices that help patients with sleep apnea breathe better. successfully analized
+[2024-06-30T14:31:02.096+0000] {logging_mixin.py:188} INFO - Summary Excluding COVID stimulus money, President Trump approved $4.8 trillion in new debt to President Biden’s $2.2 trillion. successfully analized
+[2024-06-30T14:31:02.098+0000] {logging_mixin.py:188} INFO - Summary The three-day slide in Nvidia shares is on track to shave more than $400 billion off the company’s market capitalization. successfully analized
+[2024-06-30T14:31:02.099+0000] {logging_mixin.py:188} INFO - Summary President Joe Biden and Donald Trump will meet at their first presidential debate of the 2024 election, where inflation could be a major focus. successfully analized
+[2024-06-30T14:31:02.100+0000] {logging_mixin.py:188} INFO - Summary Nvidia Corp. dominates coverage of the semiconductor industry, but there are other semiconductor manufacturers that are also growing quickly during this upcycle for the industry. successfully analized
+[2024-06-30T14:31:02.101+0000] {logging_mixin.py:188} INFO - Summary In her early 20s, Hannah Maruyama never earned more than $30,000 a year. Now, the 29-year-old makes $100,000 working in AI without a bachelor’s degree. successfully analized
+[2024-06-30T14:31:02.103+0000] {logging_mixin.py:188} INFO - Summary Marvell and Astera Labs can continue growing alongside Nvidia, according to Jefferies. successfully analized
+[2024-06-30T14:31:02.104+0000] {logging_mixin.py:188} INFO - Summary Howard Marks said he believes it will take a good amount of time before AI technologies start impacting non-AI companies. successfully analized
+[2024-06-30T14:31:02.105+0000] {logging_mixin.py:188} INFO - Summary Job seekers in today's competitive labor market are feeling whiplash from the Great Resignation, but new pay data shows some roles are on the rebound. successfully analized
+[2024-06-30T14:31:02.107+0000] {logging_mixin.py:188} INFO - Summary Chicago Fed President Austan Goolsbee said Monday there are new signs of stress on the economy that should make the U.S. central bank at least wonder if its policy rate needs to be as high as it currently is. successfully analized
+[2024-06-30T14:31:02.108+0000] {logging_mixin.py:188} INFO - Summary Wall Street is little changed Monday after an up-and-down week for the AI trade. successfully analized
+[2024-06-30T14:31:02.109+0000] {logging_mixin.py:188} INFO - Summary The case comes as scholarships tied to race and ethnicity are posing challenges to donors and schools in the wake of the Supreme Court’s affirmative action decision successfully analized
+[2024-06-30T14:31:02.111+0000] {logging_mixin.py:188} INFO - Summary Depending on how close the person is you're reaching out to, there are three ways to ask for an informational interview, says Gorick Ng. successfully analized
+[2024-06-30T14:31:02.112+0000] {logging_mixin.py:188} INFO - Summary Alnylam Pharmaceuticals’ stock jumped nearly 40% premarket on Monday after the company released results of a late-stage trial for a heart drug that analysts see competing with a key Pfizer treatment. successfully analized
+[2024-06-30T14:31:02.113+0000] {logging_mixin.py:188} INFO - Summary For queer people, finding a financial professional who understands your needs will take some vetting, experts say. successfully analized
+[2024-06-30T14:31:02.115+0000] {logging_mixin.py:188} INFO - Summary Analyst Keith Horowitz said Ally Financial offers “the best way” to play an economic recovery within Citi’s coverage universe due to “fixed rate asset repricing potential combined with a liability sensitive balance sheet.” successfully analized
+[2024-06-30T14:31:02.116+0000] {logging_mixin.py:188} INFO - Summary An analyst thinks Wall Street still underestimates AI’s potential to drive iPhone device upgrades. successfully analized
+[2024-06-30T14:31:02.117+0000] {logging_mixin.py:188} INFO - Summary In a 35-page report, Muddy Waters said Eurofins Chief Executive Gilles Martin has spent decades enriching himself through improper real-estate deals successfully analized
+[2024-06-30T14:31:02.118+0000] {logging_mixin.py:188} INFO - Summary The move is the latest in a wave of M&A offerings aimed at Vista, a maker of outdoor products and ammunition, for all or parts of its business. successfully analized
+[2024-06-30T14:31:02.120+0000] {logging_mixin.py:188} INFO - Summary Packaging giant Sonoco is poised to become the leading metal-food-can maker globally. successfully analized
+[2024-06-30T14:31:02.121+0000] {logging_mixin.py:188} INFO - Summary Tom Lee, who accurately predicted the 2023 rally, lays out a path for the S&P 500 to triple in the next few years. successfully analized
+[2024-06-30T14:31:02.122+0000] {logging_mixin.py:188} INFO - Summary California-based biopharmaceutical company plans to trade on the Nasdaq under the symbol ALMS. successfully analized
+[2024-06-30T14:31:02.123+0000] {logging_mixin.py:188} INFO - Summary Oil futures edged higher Monday morning, attempting to build on back-to-back weekly gains as crude rebounded from an early June slump that took prices to their lowest since early February. successfully analized
+[2024-06-30T14:31:02.124+0000] {logging_mixin.py:188} INFO - Summary The energy sector is keeping the lights on for investors. successfully analized
+[2024-06-30T14:31:02.125+0000] {logging_mixin.py:188} INFO - Summary An estimated 50% to 60% of U.S. dealerships use CDK’s software, which offers one-stop-shop service for sales, title work, financing and services and parts orders. successfully analized
+[2024-06-30T14:31:02.127+0000] {logging_mixin.py:188} INFO - Summary Critical information for the U.S. trading day successfully analized
+[2024-06-30T14:31:02.128+0000] {logging_mixin.py:188} INFO - Summary “My sister and I found loads of evidence online that this is a fake account. There are actually numerous fake accounts on various platforms that use this guy’s images.” successfully analized
+[2024-06-30T14:31:02.130+0000] {logging_mixin.py:188} INFO - Summary Bond yields were little changed early Monday as traders awaited fresh guidance on the likely trajectory of Federal Reserve policy. successfully analized
+[2024-06-30T14:31:02.131+0000] {logging_mixin.py:188} INFO - Summary Apple could be facing a fresh fine after the European Commission said the rules it uses to govern its AppStore are in breach of the Digital Markets Act successfully analized
+[2024-06-30T14:31:02.133+0000] {logging_mixin.py:188} INFO - Summary Trainor and her husband stand to make a tidy profit on the posh property, which they bought in 2020. successfully analized
+[2024-06-30T14:31:02.134+0000] {logging_mixin.py:188} INFO - Summary Billionaire philanthropist Melinda French Gates shared the best life lesson she learned from the late Charlie Munger, and how anyone can put it into practice. successfully analized
+[2024-06-30T14:31:02.135+0000] {logging_mixin.py:188} INFO - Summary You can improve your emotional intelligence by paying closer attention to your conversations at work, says Juliette Han, a Harvard-trained neuroscientist. successfully analized
+[2024-06-30T14:31:02.136+0000] {logging_mixin.py:188} INFO - Summary The joint venture between AMC, Regal and Cinemark has been best known for bringing classic Hollywood titles, live telecasts and concerts to theaters. successfully analized
+[2024-06-30T14:31:02.137+0000] {logging_mixin.py:188} INFO - Summary Prices for most things continue to rise in 2024, but there are exceptions such as air travel and major appliances. successfully analized
+[2024-06-30T14:31:02.138+0000] {logging_mixin.py:188} INFO - Summary Recent court decisions and the upcoming presidential election have borrowers wondering if they can count on repayment and cancellation initiatives. successfully analized
+[2024-06-30T14:31:02.139+0000] {logging_mixin.py:188} INFO - Summary Donald Trump’s ongoing court cases got some airtime during the first  matchup with President Joe Biden of 2024 successfully analized
+[2024-06-30T14:31:02.141+0000] {logging_mixin.py:188} INFO - Summary Four of the top 10 retirement hot spots are in Florida. The Sunshine State also had the most cities in the top 50 list. successfully analized
+[2024-06-30T14:31:02.142+0000] {logging_mixin.py:188} INFO - Summary A trio of jobs reports will shed light on the state of the U.S. economy. Meanwhile, Constellation Brands is our lone earnings report. successfully analized
+[2024-06-30T14:31:02.144+0000] {logging_mixin.py:188} INFO - Summary Amy Chan always loved writing about relationships. After she launched her first breakup bootcamp, she realized she could focus on them full-time. successfully analized
+[2024-06-30T14:31:02.146+0000] {logging_mixin.py:188} INFO - Summary Three New York boroughs are among the most expensive U.S. places to live, with Manhattan's cost of living more than double the national average. successfully analized
+[2024-06-30T14:31:02.147+0000] {logging_mixin.py:188} INFO - Summary Teyoshe Smith started a charcuterie side hustle from her house. A year later, she left her job at Capital One. She now makes and sells cheeseboards full-time. successfully analized
+[2024-06-30T14:31:02.149+0000] {logging_mixin.py:188} INFO - Summary Consumer interest in waste composting is picking up given climate and farming benefits, but national numbers remains very low, decades behind recycling. successfully analized
+[2024-06-30T14:31:02.150+0000] {logging_mixin.py:188} INFO - Summary When it comes to retirement, Gen Xers are a long way off from their savings goals. But it's not too late to get on track. Here's how to get started. successfully analized
+[2024-06-30T14:31:02.151+0000] {logging_mixin.py:188} INFO - Summary When it comes to hotels or lodging, it's important to communicate what you're willing to spend per night. successfully analized
+[2024-06-30T14:31:02.153+0000] {logging_mixin.py:188} INFO - Summary Kat Holmes has been competing on the international fencing circuit since she was 15. successfully analized
+[2024-06-30T14:31:02.154+0000] {logging_mixin.py:188} INFO - Summary Oppenheimer sees compelling parallels between what Apple is doing in AI and its 1980s Macintosh strategy. successfully analized
+[2024-06-30T14:31:02.155+0000] {logging_mixin.py:188} INFO - Summary Trump’s plans cannot help the retirement safety net. successfully analized
+[2024-06-30T14:31:02.156+0000] {logging_mixin.py:188} INFO - Summary The presidential debate was light on details for everyday Americans in search of answers about their money worries, observers told MarketWatch. successfully analized
+[2024-06-30T14:31:02.158+0000] {logging_mixin.py:188} INFO - Summary The former president claimed without evidence during Thursday’s debate that migrants were “taking Black jobs.” Memes ensued — as did criticism of what one academic called a “fascist” point of view from the candidate. successfully analized
+[2024-06-30T14:31:02.159+0000] {logging_mixin.py:188} INFO - Summary “If I want to rent or sell in the future, am I going to have a tough time?” successfully analized
+[2024-06-30T14:31:02.160+0000] {logging_mixin.py:188} INFO - Summary History indicates that investors should work to separate any partisan enthusiasm or disdain from their portfolio choices, particularly as the battle for the presidency goes through its usual twists and turns. successfully analized
+[2024-06-30T14:31:02.162+0000] {logging_mixin.py:188} INFO - Summary The NFL has been found guilty of violating U.S. antitrust laws in its distribution of “Sunday Ticket,” and could have to pay as much as $14 billion. successfully analized
+[2024-06-30T14:31:02.163+0000] {logging_mixin.py:188} INFO - Summary Consumer-discretionary stocks bounced back in June, raising hopes of a recovery after their tumultuous start to 2024. But market analysts warn that a comeback in this sector could belie underlying consumer weakness amid ongoing concerns over the health of American households. successfully analized
+[2024-06-30T14:31:02.165+0000] {logging_mixin.py:188} INFO - Summary Shares of biotech company Cassava Sciences Inc. plummeted on Friday after a federal grand jury indicted a onetime science advisor to the company and charged him with falsifying data to obtain millions of dollars in government funds successfully analized
+[2024-06-30T14:31:02.166+0000] {logging_mixin.py:188} INFO - Summary The U.S. stock market rallied in the first half of 2024, with the S&P 500 scoring a double-digit gain as it ended June near its all-time closing peak. successfully analized
+[2024-06-30T14:31:02.168+0000] {logging_mixin.py:188} INFO - Summary Boeing Co.’s Starliner spacecraft will remain docked at the International Space Station while the aerospace company and NASA conduct further tests into thruster issues and helium leaks. successfully analized
+[2024-06-30T14:31:02.169+0000] {logging_mixin.py:188} INFO - Summary CNBC's Jim Cramer on Friday analyzed the top ten performers in the S&amp;P 500 over the last quarter. successfully analized
+[2024-06-30T14:31:02.170+0000] {logging_mixin.py:188} INFO - Summary Millions of student-loan borrowers are getting a reprieve from their monthly payments while litigation challenging the Biden administration’s repayment plan makes its way through the court system. successfully analized
+[2024-06-30T14:31:02.171+0000] {logging_mixin.py:188} INFO - Summary “We have heard from customers that we have disappointed them,” the company said. “We have taken this feedback to heart.” successfully analized
+[2024-06-30T14:31:02.173+0000] {logging_mixin.py:188} INFO - Summary Advocates for fair housing on Friday criticized a Supreme Court decision allowing cities to enforce laws restricting sleeping on public property. successfully analized
+[2024-06-30T14:31:02.174+0000] {logging_mixin.py:188} INFO - Summary Just 22% of golfers are people of color and 42% have household incomes of $100,000-plus, according to the National Golf Foundation. successfully analized
+[2024-06-30T14:31:02.175+0000] {logging_mixin.py:188} INFO - Summary Farley said its main competitors are expected to be Chinese automakers such as BYD and an anticipated entry-level car from U.S. EV leader Tesla. successfully analized
+[2024-06-30T14:31:02.177+0000] {logging_mixin.py:188} INFO - Summary The biggest surge in inflation in 40 years could end up deciding the 2024 presidential election — and President Joe Biden and former President Donald Trump each sought to outflank each other on the topic in Thursday’s debate. successfully analized
+[2024-06-30T14:31:02.178+0000] {logging_mixin.py:188} INFO - Summary OpenAI CEO Sam Altman says he leaned heavily on advice from his friend Brian Chesky — CEO and co-founder of Airbnb — after ChatGPT became a global phenomenon. successfully analized
+[2024-06-30T14:31:02.179+0000] {logging_mixin.py:188} INFO - Summary Boeing's crew flight test represents the first time Starliner is carrying people, flying NASA astronauts Butch Wilmore and Suni Williams. successfully analized
+[2024-06-30T14:31:02.181+0000] {logging_mixin.py:188} INFO - Summary Parents “are frankly pissed off and anxious about what the future looks like, and that’s what was so disappointing about last night.” successfully analized
+[2024-06-30T14:31:02.182+0000] {logging_mixin.py:188} INFO - Summary Both candidates missed the chance to discuss plans to fix the program. successfully analized
+[2024-06-30T14:31:02.183+0000] {logging_mixin.py:188} INFO - Summary Americans are facing the most expensive housing market in decades, but neither presidential candidate addressed the affordability crisis in detail on Thursday. successfully analized
+[2024-06-30T14:31:02.184+0000] {logging_mixin.py:188} INFO - Summary Move over, J.P. Morgan — we have a new contender for most apocalyptic stock-market forecast. successfully analized
+[2024-06-30T14:31:02.185+0000] {logging_mixin.py:188} INFO - Summary Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading. successfully analized
+[2024-06-30T14:31:02.186+0000] {logging_mixin.py:188} INFO - Summary Health officials are ramping up their response to H5N1 — but this is not COVID 2.0, experts say. successfully analized
+[2024-06-30T14:31:02.188+0000] {logging_mixin.py:188} INFO - Summary One of the top takeaways from Thursday night’s televised debate between President Joe Biden and his Republican challenger Donald Trump is that the U.S. faces little prospect of any fiscal restraint in the years ahead no matter who wins the Nov. 5 election. successfully analized
+[2024-06-30T14:31:02.189+0000] {logging_mixin.py:188} INFO - Summary President Joe Biden emerged bruised from his first presidential debate with Donald Trump, raising fears about his age and ability to serve another term. successfully analized
+[2024-06-30T14:31:02.190+0000] {logging_mixin.py:188} INFO - Summary The SEC on Friday filed sued against blockchain software company Consensys, alleging the improper sale of securities. successfully analized
+[2024-06-30T14:31:02.191+0000] {logging_mixin.py:188} INFO - Summary The campaigns of President Joe Biden and former President Donald Trump said Friday they had each raised millions of dollars around their first debate Thursday. successfully analized
+[2024-06-30T14:31:02.192+0000] {logging_mixin.py:188} INFO - Summary “Abortion is deeply rooted in the class system,” a law professor tells MarketWatch two years after the end of Roe v. Wade successfully analized
+[2024-06-30T14:31:02.193+0000] {logging_mixin.py:188} INFO - Summary The Supreme Court ruling overturned the case known as Chevron v. Natural Resources Defense Council, reducing the authority of federal regulatory agencies. successfully analized
+[2024-06-30T14:31:02.194+0000] {logging_mixin.py:188} INFO - Summary Also: Stock-market winners and losers for the first half of 2024, a possible AI infrastructure bubble and personal financial advice successfully analized
+[2024-06-30T14:31:02.195+0000] {logging_mixin.py:188} INFO - Summary While Friday’s encouraging inflation data might be helpful to President Joe Biden, the spotlight at the moment remains on his widely panned performance in a debate against presumptive Republican nominee Donald Trump. successfully analized
+[2024-06-30T14:31:02.196+0000] {logging_mixin.py:188} INFO - Summary Critics say the opposite: the longer policy takes, the more it looks like it isn’t working successfully analized
+[2024-06-30T14:31:02.199+0000] {logging_mixin.py:188} INFO - Summary A select handful of health insurance names popped on Friday following the first debate between President Joe Biden and former President Donald Trump. successfully analized
+[2024-06-30T14:31:02.200+0000] {logging_mixin.py:188} INFO - Summary JPMorgan ups data center owner to outperform as a ‘substantial beneficiary of cloud and AI demand for data center capacity.’ successfully analized
+[2024-06-30T14:31:02.202+0000] {logging_mixin.py:188} INFO - Summary Pixar’s “Inside Out 2” is poised to become the first film to achieve ticket sales of more than $1 billion this weekend, and will be the first film since “Barbie” to achieve that threshold. successfully analized
+[2024-06-30T14:31:02.209+0000] {logging_mixin.py:188} INFO - Summary The Investing Club holds its "Morning Meeting" every weekday at 10:20 a.m. ET. successfully analized
+[2024-06-30T14:31:02.210+0000] {logging_mixin.py:188} INFO - Summary Besides Nvidia itself, there are only four U.S. companies with valuations greater than the amount of Nvidia’s market-cap gains. successfully analized
+[2024-06-30T14:31:02.212+0000] {logging_mixin.py:188} INFO - Summary Two sectors are expected to have an outsized impact on Russell's indexes in the year ahead. successfully analized
+[2024-06-30T14:31:02.213+0000] {logging_mixin.py:188} INFO - Summary Barbara Corcoran is the founder and former owner of the firm, The Corcoran Group, a real estate company she founded in 1973 and sold in 2001 for $66 million. successfully analized
+[2024-06-30T14:31:02.214+0000] {logging_mixin.py:188} INFO - Summary Shares of Chewy Inc. are down 9.7% Friday after spiking Thursday in the wake of a cryptic post from influential trader Keith Gill, also known as Roaring Kitty. successfully analized
+[2024-06-30T14:31:02.215+0000] {logging_mixin.py:188} INFO - Summary Social media has opened up the door to learn about investing. But you might want to think twice before you follow the advice you see. successfully analized
+[2024-06-30T14:31:02.216+0000] {logging_mixin.py:188} INFO - Summary A new CNBC Delivering Alpha Stock Survey of 400 money managers shows they think Trump is better for stocks, but they're split where the market is heading. successfully analized
+[2024-06-30T14:31:02.218+0000] {logging_mixin.py:188} INFO - Summary The S&P 500 is up nearly 16% so far this year with dividends reinvested. Artificial intelligence has been the big theme driving gains for Big Tech, especially Nvidia Corp. But 38% of the S&P 500 have had negative returns during the first half of 2024. successfully analized
+[2024-06-30T14:31:02.219+0000] {logging_mixin.py:188} INFO - Summary President Biden now has a 19% chance of being re-elected, according to betting markets tracked by RealClearPolitics. That’s down from 36% Wednesday, and is the lowest level ever in RCP’s data. successfully analized
+[2024-06-30T14:31:02.220+0000] {logging_mixin.py:188} INFO - Summary Consumers were slightly more optimistic about the economy at the end of June, but the effects of high inflation in the past few years still weighed on their minds. successfully analized
+[2024-06-30T14:31:02.221+0000] {logging_mixin.py:188} INFO - Summary Sora Lee has learned a number of financial lessons on her way to a huge $400,000 salary. But this one money move proved to be her biggest regret. successfully analized
+[2024-06-30T14:31:02.222+0000] {logging_mixin.py:188} INFO - Summary Index rises to 47.4, compared with a forecast of 40 successfully analized
+[2024-06-30T14:31:02.224+0000] {logging_mixin.py:188} INFO - Summary One Rosenblatt analyst recommends that investors take a pause on Alphabet shares given changes around AI and the broad ad market. successfully analized
+[2024-06-30T14:31:02.225+0000] {logging_mixin.py:188} INFO - Summary Wall Street is on track for another day of gains following the release of the Fed's preferred inflation gauge for May. successfully analized
+[2024-06-30T14:31:02.226+0000] {logging_mixin.py:188} INFO - Summary Justine Parker owns Toes N Sand Properties, a rental management company in Orange Beach, Alabama that brought in about $500,000 in 2023. successfully analized
+[2024-06-30T14:31:02.227+0000] {logging_mixin.py:188} INFO - Summary “Should I pay off the mortgage or go with the plan to make money through investments?” successfully analized
+[2024-06-30T14:31:02.228+0000] {logging_mixin.py:188} INFO - Summary Tomasz Piskorksi of Columbia Business School says Fed didn’t include scenarios that killed Silicon Valley Bank, First Republic successfully analized
+[2024-06-30T14:31:02.229+0000] {logging_mixin.py:188} INFO - Summary President Joe Biden will face “incredible pressure to step aside” following his shaky debate performance against Donald Trump Thursday night, though the decision will ultimately be his alone, said Isaac Boltansky, director of policy research at BTIG, in a note. successfully analized
+[2024-06-30T14:31:02.231+0000] {logging_mixin.py:188} INFO - Summary A list of 20 standout stocks during the first half of 2024 includes names riding the AI wave, but also a few surprises. successfully analized
+[2024-06-30T14:31:02.232+0000] {logging_mixin.py:188} INFO - Summary Nike reported fourth-quarter results after market close Thursday successfully analized
+[2024-06-30T14:31:02.232+0000] {logging_mixin.py:188} INFO - Summary Fisker Inc. said Friday it has issued a voluntary recall of 12,523 vehicles in North America and Europe to address an issue involving the outer door handles. successfully analized
+[2024-06-30T14:31:02.234+0000] {logging_mixin.py:188} INFO - Summary Some Democrats said President Joe Biden needs to exit the White House race against Donald Trump after his debate performance. DJT stock may benefit. successfully analized
+[2024-06-30T14:31:02.235+0000] {logging_mixin.py:188} INFO - Summary The gifts stem from a schedule for annual grants that Buffett drew up in 2006. successfully analized
+[2024-06-30T14:31:02.236+0000] {logging_mixin.py:188} INFO - Summary The vaccine, called mResvia, has already been approved by the U.S. Food and Drug Administration, becoming Moderna’s second approved product after its COVID-19 vaccine, Spikevax. successfully analized
+[2024-06-30T14:31:02.237+0000] {logging_mixin.py:188} INFO - Summary This year’s furious rally in technology and megacap stocks is set to leave its mark on Friday when FTSE Russell carries out its latest annual index reconstitution. successfully analized
+[2024-06-30T14:31:02.238+0000] {logging_mixin.py:188} INFO - Summary Oil futures rose Friday, on track to book monthly gains as investors continued to fret over the possibility of a wider Middle East conflict that could threaten flows of crude out of the region. successfully analized
+[2024-06-30T14:31:02.239+0000] {logging_mixin.py:188} INFO - Summary “We don’t need to learn anything about money for our marriage,” one bride says. Actually, they do. successfully analized
+[2024-06-30T14:31:02.241+0000] {logging_mixin.py:188} INFO - Summary Trump Media & Technology Group Corp.’s stock rose 8% early Friday, after widespread criticism of the performance of incumbent President Joe Biden in his first presidential debate with former President Donald Trump. successfully analized
+[2024-06-30T14:31:02.242+0000] {logging_mixin.py:188} INFO - Summary Polling expert Nate Silver says California Gov. Gavin Newsom or Vice President Kamala Harris would be better choices. successfully analized
+[2024-06-30T14:31:02.242+0000] {logging_mixin.py:188} INFO - Summary “At 56, he has few prospects for his future.” successfully analized
+[2024-06-30T14:31:02.243+0000] {logging_mixin.py:188} INFO - Summary “Should I accept that 7%-plus interest rate is the starting rate these days?” successfully analized
+[2024-06-30T14:31:02.244+0000] {logging_mixin.py:188} INFO - Summary How do you keep up the tenacity to fight through red tape when you’re grieving? successfully analized
+[2024-06-30T14:31:02.246+0000] {logging_mixin.py:188} INFO - Summary How will we know if we are OK with the stocks we own? I use a levered concept that has nothing to do with debt. successfully analized
+[2024-06-30T14:31:02.247+0000] {logging_mixin.py:188} INFO - Summary Joe Biden and Donald Trump sparred on inflation and the U.S. economy during the debate. Here are four household budget items where prices are still rising fast. successfully analized
+[2024-06-30T14:31:02.248+0000] {logging_mixin.py:188} INFO - Summary The Wall Street veteran said it’s better to exit any positions quickly and take a manageable loss successfully analized
+[2024-06-30T14:31:02.249+0000] {logging_mixin.py:188} INFO - Summary The 6-bedroom, 7.5-bath residence spans more than 9,200 square feet and sits on about a half-acre in affluent Newton, Mass. successfully analized
+[2024-06-30T14:31:02.250+0000] {logging_mixin.py:188} INFO - Summary Bond yields nudged higher early Friday, amid cautious trading as investors waited for inflation data crucial to the Federal Reserve’s thinking. successfully analized
+[2024-06-30T14:31:02.251+0000] {logging_mixin.py:188} INFO - Summary Global funds have already poured in close to $11 billion into index-eligible bonds since the announcement, with expectations of $20-25 billion more in the next 10 months. successfully analized
+[2024-06-30T14:31:02.252+0000] {logging_mixin.py:188} INFO - Summary CNBC's Jim Cramer told investors why he thinks Amazon is making it hard for Walgreens to succeed. successfully analized
+[2024-06-30T14:31:02.253+0000] {logging_mixin.py:188} INFO - Summary The number of new thematic funds surged in 2021. Now more are closing than launching, according to Strategas. successfully analized
+[2024-06-30T14:31:02.255+0000] {logging_mixin.py:188} INFO - Summary Shares of Infinera Corp. rally after hours Thursday after a $2.3 billion deal with Finnish telecom giant Nokia Corp. successfully analized
+[2024-06-30T14:31:02.256+0000] {logging_mixin.py:188} INFO - Summary Paying almost 40% more than in 2014, the average person spends $16.26 out-of-pocket per prescription, according to the data. successfully analized
+[2024-06-30T14:31:02.257+0000] {logging_mixin.py:188} INFO - Summary Megacap technology companies are again driving the stock-market rally in June, yet hedge funds are dumping them in a reverse of their buying trend earlier this year, according to analysts at Goldman Sachs. successfully analized
+[2024-06-30T14:31:02.258+0000] {logging_mixin.py:188} INFO - Summary Shares of Nike Inc. fell after hours on Thursday after the sneaker maker reported quarterly sales that missed Wall Street’s estimates, saying the results “highlighted challenges” that led the company to adjust its outlook for the fiscal year ahead. successfully analized
+[2024-06-30T14:31:02.259+0000] {logging_mixin.py:188} INFO - Summary United Launch Alliance CEO Tory Bruno announced that his company will bite the bullet and fly Cert-2 without a customer payload. successfully analized
+[2024-06-30T14:31:02.260+0000] {logging_mixin.py:188} INFO - Summary Investment manager VanEck’s application for a spot solana exchange-traded fund is unlikely to be approved anytime soon — but the move is still bullish for cryptocurrencies, industry participants said. successfully analized
+[2024-06-30T14:31:02.261+0000] {logging_mixin.py:188} INFO - Summary Increasingly, drinking establishments are becoming the gathering spot of choice for all kinds of political occasions. successfully analized
+[2024-06-30T14:31:02.262+0000] {logging_mixin.py:188} INFO - Summary Here are ways to spot and protect yourself from a con while job-hunting. successfully analized
+[2024-06-30T14:31:02.263+0000] {logging_mixin.py:188} INFO - Summary Billionaire philanthropist Melinda French Gates shared the best life lesson she learned from the late Charlie Munger, and how anyone can put it into practice. successfully analized
+[2024-06-30T14:31:02.264+0000] {logging_mixin.py:188} INFO - Summary You can improve your emotional intelligence by paying closer attention to your conversations at work, says Juliette Han, a Harvard-trained neuroscientist. successfully analized
+[2024-06-30T14:31:02.265+0000] {logging_mixin.py:188} INFO - Summary The joint venture between AMC, Regal and Cinemark has been best known for bringing classic Hollywood titles, live telecasts and concerts to theaters. successfully analized
+[2024-06-30T14:31:02.267+0000] {logging_mixin.py:188} INFO - Summary Prices for most things continue to rise in 2024, but there are exceptions such as air travel and major appliances. successfully analized
+[2024-06-30T14:31:02.268+0000] {logging_mixin.py:188} INFO - Summary Recent court decisions and the upcoming presidential election have borrowers wondering if they can count on repayment and cancellation initiatives. successfully analized
+[2024-06-30T14:31:02.269+0000] {logging_mixin.py:188} INFO - Summary Donald Trump’s ongoing court cases got some airtime during the first  matchup with President Joe Biden of 2024 successfully analized
+[2024-06-30T14:31:02.271+0000] {logging_mixin.py:188} INFO - Summary Four of the top 10 retirement hot spots are in Florida. The Sunshine State also had the most cities in the top 50 list. successfully analized
+[2024-06-30T14:31:02.272+0000] {logging_mixin.py:188} INFO - Summary A trio of jobs reports will shed light on the state of the U.S. economy. Meanwhile, Constellation Brands is our lone earnings report. successfully analized
+[2024-06-30T14:31:02.272+0000] {logging_mixin.py:188} INFO - Summary Amy Chan always loved writing about relationships. After she launched her first breakup bootcamp, she realized she could focus on them full-time. successfully analized
+[2024-06-30T14:31:02.273+0000] {logging_mixin.py:188} INFO - Summary Three New York boroughs are among the most expensive U.S. places to live, with Manhattan's cost of living more than double the national average. successfully analized
+[2024-06-30T14:31:02.274+0000] {logging_mixin.py:188} INFO - Summary Teyoshe Smith started a charcuterie side hustle from her house. A year later, she left her job at Capital One. She now makes and sells cheeseboards full-time. successfully analized
+[2024-06-30T14:31:02.275+0000] {logging_mixin.py:188} INFO - Summary Consumer interest in waste composting is picking up given climate and farming benefits, but national numbers remains very low, decades behind recycling. successfully analized
+[2024-06-30T14:31:02.276+0000] {logging_mixin.py:188} INFO - Summary When it comes to retirement, Gen Xers are a long way off from their savings goals. But it's not too late to get on track. Here's how to get started. successfully analized
+[2024-06-30T14:31:02.276+0000] {logging_mixin.py:188} INFO - Summary When it comes to hotels or lodging, it's important to communicate what you're willing to spend per night. successfully analized
+[2024-06-30T14:31:02.277+0000] {logging_mixin.py:188} INFO - Summary Kat Holmes has been competing on the international fencing circuit since she was 15. successfully analized
+[2024-06-30T14:31:02.278+0000] {logging_mixin.py:188} INFO - Summary Oppenheimer sees compelling parallels between what Apple is doing in AI and its 1980s Macintosh strategy. successfully analized
+[2024-06-30T14:31:02.279+0000] {logging_mixin.py:188} INFO - Summary Trump’s plans cannot help the retirement safety net. successfully analized
+[2024-06-30T14:31:02.280+0000] {logging_mixin.py:188} INFO - Summary The presidential debate was light on details for everyday Americans in search of answers about their money worries, observers told MarketWatch. successfully analized
+[2024-06-30T14:31:02.281+0000] {logging_mixin.py:188} INFO - Summary The former president claimed without evidence during Thursday’s debate that migrants were “taking Black jobs.” Memes ensued — as did criticism of what one academic called a “fascist” point of view from the candidate. successfully analized
+[2024-06-30T14:31:02.282+0000] {logging_mixin.py:188} INFO - Summary “If I want to rent or sell in the future, am I going to have a tough time?” successfully analized
+[2024-06-30T14:31:02.283+0000] {logging_mixin.py:188} INFO - Summary History indicates that investors should work to separate any partisan enthusiasm or disdain from their portfolio choices, particularly as the battle for the presidency goes through its usual twists and turns. successfully analized
+[2024-06-30T14:31:02.284+0000] {logging_mixin.py:188} INFO - Summary The NFL has been found guilty of violating U.S. antitrust laws in its distribution of “Sunday Ticket,” and could have to pay as much as $14 billion. successfully analized
+[2024-06-30T14:31:02.285+0000] {logging_mixin.py:188} INFO - Summary Consumer-discretionary stocks bounced back in June, raising hopes of a recovery after their tumultuous start to 2024. But market analysts warn that a comeback in this sector could belie underlying consumer weakness amid ongoing concerns over the health of American households. successfully analized
+[2024-06-30T14:31:02.286+0000] {logging_mixin.py:188} INFO - Summary Shares of biotech company Cassava Sciences Inc. plummeted on Friday after a federal grand jury indicted a onetime science advisor to the company and charged him with falsifying data to obtain millions of dollars in government funds successfully analized
+[2024-06-30T14:31:02.287+0000] {logging_mixin.py:188} INFO - Summary The U.S. stock market rallied in the first half of 2024, with the S&P 500 scoring a double-digit gain as it ended June near its all-time closing peak. successfully analized
+[2024-06-30T14:31:02.288+0000] {logging_mixin.py:188} INFO - Summary Boeing Co.’s Starliner spacecraft will remain docked at the International Space Station while the aerospace company and NASA conduct further tests into thruster issues and helium leaks. successfully analized
+[2024-06-30T14:31:02.289+0000] {logging_mixin.py:188} INFO - Summary CNBC's Jim Cramer on Friday analyzed the top ten performers in the S&amp;P 500 over the last quarter. successfully analized
+[2024-06-30T14:31:02.290+0000] {logging_mixin.py:188} INFO - Summary Millions of student-loan borrowers are getting a reprieve from their monthly payments while litigation challenging the Biden administration’s repayment plan makes its way through the court system. successfully analized
+[2024-06-30T14:31:02.291+0000] {logging_mixin.py:188} INFO - Summary “We have heard from customers that we have disappointed them,” the company said. “We have taken this feedback to heart.” successfully analized
+[2024-06-30T14:31:02.292+0000] {logging_mixin.py:188} INFO - Summary Advocates for fair housing on Friday criticized a Supreme Court decision allowing cities to enforce laws restricting sleeping on public property. successfully analized
+[2024-06-30T14:31:02.293+0000] {logging_mixin.py:188} INFO - Summary Just 22% of golfers are people of color and 42% have household incomes of $100,000-plus, according to the National Golf Foundation. successfully analized
+[2024-06-30T14:31:02.295+0000] {logging_mixin.py:188} INFO - Summary Farley said its main competitors are expected to be Chinese automakers such as BYD and an anticipated entry-level car from U.S. EV leader Tesla. successfully analized
+[2024-06-30T14:31:02.296+0000] {logging_mixin.py:188} INFO - Summary The biggest surge in inflation in 40 years could end up deciding the 2024 presidential election — and President Joe Biden and former President Donald Trump each sought to outflank each other on the topic in Thursday’s debate. successfully analized
+[2024-06-30T14:31:02.297+0000] {logging_mixin.py:188} INFO - Summary OpenAI CEO Sam Altman says he leaned heavily on advice from his friend Brian Chesky — CEO and co-founder of Airbnb — after ChatGPT became a global phenomenon. successfully analized
+[2024-06-30T14:31:02.298+0000] {logging_mixin.py:188} INFO - Summary Boeing's crew flight test represents the first time Starliner is carrying people, flying NASA astronauts Butch Wilmore and Suni Williams. successfully analized
+[2024-06-30T14:31:02.299+0000] {logging_mixin.py:188} INFO - Summary Parents “are frankly pissed off and anxious about what the future looks like, and that’s what was so disappointing about last night.” successfully analized
+[2024-06-30T14:31:02.300+0000] {logging_mixin.py:188} INFO - Summary Both candidates missed the chance to discuss plans to fix the program. successfully analized
+[2024-06-30T14:31:02.302+0000] {logging_mixin.py:188} INFO - Summary Americans are facing the most expensive housing market in decades, but neither presidential candidate addressed the affordability crisis in detail on Thursday. successfully analized
+[2024-06-30T14:31:02.303+0000] {logging_mixin.py:188} INFO - Summary Move over, J.P. Morgan — we have a new contender for most apocalyptic stock-market forecast. successfully analized
+[2024-06-30T14:31:02.304+0000] {logging_mixin.py:188} INFO - Summary Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading. successfully analized
+[2024-06-30T14:31:02.305+0000] {logging_mixin.py:188} INFO - Summary Health officials are ramping up their response to H5N1 — but this is not COVID 2.0, experts say. successfully analized
+[2024-06-30T14:31:02.306+0000] {logging_mixin.py:188} INFO - Summary One of the top takeaways from Thursday night’s televised debate between President Joe Biden and his Republican challenger Donald Trump is that the U.S. faces little prospect of any fiscal restraint in the years ahead no matter who wins the Nov. 5 election. successfully analized
+[2024-06-30T14:31:02.307+0000] {logging_mixin.py:188} INFO - Summary President Joe Biden emerged bruised from his first presidential debate with Donald Trump, raising fears about his age and ability to serve another term. successfully analized
+[2024-06-30T14:31:02.309+0000] {logging_mixin.py:188} INFO - Summary The SEC on Friday filed sued against blockchain software company Consensys, alleging the improper sale of securities. successfully analized
+[2024-06-30T14:31:02.310+0000] {logging_mixin.py:188} INFO - Summary The campaigns of President Joe Biden and former President Donald Trump said Friday they had each raised millions of dollars around their first debate Thursday. successfully analized
+[2024-06-30T14:31:02.311+0000] {logging_mixin.py:188} INFO - Summary “Abortion is deeply rooted in the class system,” a law professor tells MarketWatch two years after the end of Roe v. Wade successfully analized
+[2024-06-30T14:31:02.312+0000] {logging_mixin.py:188} INFO - Summary The Supreme Court ruling overturned the case known as Chevron v. Natural Resources Defense Council, reducing the authority of federal regulatory agencies. successfully analized
+[2024-06-30T14:31:02.313+0000] {logging_mixin.py:188} INFO - Summary Also: Stock-market winners and losers for the first half of 2024, a possible AI infrastructure bubble and personal financial advice successfully analized
+[2024-06-30T14:31:02.315+0000] {logging_mixin.py:188} INFO - Summary While Friday’s encouraging inflation data might be helpful to President Joe Biden, the spotlight at the moment remains on his widely panned performance in a debate against presumptive Republican nominee Donald Trump. successfully analized
+[2024-06-30T14:31:02.316+0000] {logging_mixin.py:188} INFO - Summary Critics say the opposite: the longer policy takes, the more it looks like it isn’t working successfully analized
+[2024-06-30T14:31:02.317+0000] {logging_mixin.py:188} INFO - Summary A select handful of health insurance names popped on Friday following the first debate between President Joe Biden and former President Donald Trump. successfully analized
+[2024-06-30T14:31:02.319+0000] {logging_mixin.py:188} INFO - Summary JPMorgan ups data center owner to outperform as a ‘substantial beneficiary of cloud and AI demand for data center capacity.’ successfully analized
+[2024-06-30T14:31:02.320+0000] {logging_mixin.py:188} INFO - Summary Pixar’s “Inside Out 2” is poised to become the first film to achieve ticket sales of more than $1 billion this weekend, and will be the first film since “Barbie” to achieve that threshold. successfully analized
+[2024-06-30T14:31:02.321+0000] {logging_mixin.py:188} INFO - Summary The Investing Club holds its "Morning Meeting" every weekday at 10:20 a.m. ET. successfully analized
+[2024-06-30T14:31:02.322+0000] {logging_mixin.py:188} INFO - Summary Besides Nvidia itself, there are only four U.S. companies with valuations greater than the amount of Nvidia’s market-cap gains. successfully analized
+[2024-06-30T14:31:02.323+0000] {logging_mixin.py:188} INFO - Summary Two sectors are expected to have an outsized impact on Russell's indexes in the year ahead. successfully analized
+[2024-06-30T14:31:02.325+0000] {logging_mixin.py:188} INFO - Summary Barbara Corcoran is the founder and former owner of the firm, The Corcoran Group, a real estate company she founded in 1973 and sold in 2001 for $66 million. successfully analized
+[2024-06-30T14:31:02.326+0000] {logging_mixin.py:188} INFO - Summary Shares of Chewy Inc. are down 9.7% Friday after spiking Thursday in the wake of a cryptic post from influential trader Keith Gill, also known as Roaring Kitty. successfully analized
+[2024-06-30T14:31:02.327+0000] {logging_mixin.py:188} INFO - Summary Social media has opened up the door to learn about investing. But you might want to think twice before you follow the advice you see. successfully analized
+[2024-06-30T14:31:02.328+0000] {logging_mixin.py:188} INFO - Summary A new CNBC Delivering Alpha Stock Survey of 400 money managers shows they think Trump is better for stocks, but they're split where the market is heading. successfully analized
+[2024-06-30T14:31:02.330+0000] {logging_mixin.py:188} INFO - Summary The S&P 500 is up nearly 16% so far this year with dividends reinvested. Artificial intelligence has been the big theme driving gains for Big Tech, especially Nvidia Corp. But 38% of the S&P 500 have had negative returns during the first half of 2024. successfully analized
+[2024-06-30T14:31:02.331+0000] {logging_mixin.py:188} INFO - Summary President Biden now has a 19% chance of being re-elected, according to betting markets tracked by RealClearPolitics. That’s down from 36% Wednesday, and is the lowest level ever in RCP’s data. successfully analized
+[2024-06-30T14:31:02.332+0000] {logging_mixin.py:188} INFO - Summary Consumers were slightly more optimistic about the economy at the end of June, but the effects of high inflation in the past few years still weighed on their minds. successfully analized
+[2024-06-30T14:31:02.333+0000] {logging_mixin.py:188} INFO - Summary Sora Lee has learned a number of financial lessons on her way to a huge $400,000 salary. But this one money move proved to be her biggest regret. successfully analized
+[2024-06-30T14:31:02.335+0000] {logging_mixin.py:188} INFO - Summary Index rises to 47.4, compared with a forecast of 40 successfully analized
+[2024-06-30T14:31:02.336+0000] {logging_mixin.py:188} INFO - Summary One Rosenblatt analyst recommends that investors take a pause on Alphabet shares given changes around AI and the broad ad market. successfully analized
+[2024-06-30T14:31:02.337+0000] {logging_mixin.py:188} INFO - Summary Wall Street is on track for another day of gains following the release of the Fed's preferred inflation gauge for May. successfully analized
+[2024-06-30T14:31:02.338+0000] {logging_mixin.py:188} INFO - Summary Justine Parker owns Toes N Sand Properties, a rental management company in Orange Beach, Alabama that brought in about $500,000 in 2023. successfully analized
+[2024-06-30T14:31:02.339+0000] {logging_mixin.py:188} INFO - Summary “Should I pay off the mortgage or go with the plan to make money through investments?” successfully analized
+[2024-06-30T14:31:02.341+0000] {logging_mixin.py:188} INFO - Summary Tomasz Piskorksi of Columbia Business School says Fed didn’t include scenarios that killed Silicon Valley Bank, First Republic successfully analized
+[2024-06-30T14:31:02.342+0000] {logging_mixin.py:188} INFO - Summary President Joe Biden will face “incredible pressure to step aside” following his shaky debate performance against Donald Trump Thursday night, though the decision will ultimately be his alone, said Isaac Boltansky, director of policy research at BTIG, in a note. successfully analized
+[2024-06-30T14:31:02.343+0000] {logging_mixin.py:188} INFO - Summary A list of 20 standout stocks during the first half of 2024 includes names riding the AI wave, but also a few surprises. successfully analized
+[2024-06-30T14:31:02.344+0000] {logging_mixin.py:188} INFO - Summary Nike reported fourth-quarter results after market close Thursday successfully analized
+[2024-06-30T14:31:02.345+0000] {logging_mixin.py:188} INFO - Summary Fisker Inc. said Friday it has issued a voluntary recall of 12,523 vehicles in North America and Europe to address an issue involving the outer door handles. successfully analized
+[2024-06-30T14:31:02.346+0000] {logging_mixin.py:188} INFO - Summary Some Democrats said President Joe Biden needs to exit the White House race against Donald Trump after his debate performance. DJT stock may benefit. successfully analized
+[2024-06-30T14:31:02.348+0000] {logging_mixin.py:188} INFO - Summary The gifts stem from a schedule for annual grants that Buffett drew up in 2006. successfully analized
+[2024-06-30T14:31:02.349+0000] {logging_mixin.py:188} INFO - Summary The vaccine, called mResvia, has already been approved by the U.S. Food and Drug Administration, becoming Moderna’s second approved product after its COVID-19 vaccine, Spikevax. successfully analized
+[2024-06-30T14:31:02.352+0000] {logging_mixin.py:188} INFO - Summary This year’s furious rally in technology and megacap stocks is set to leave its mark on Friday when FTSE Russell carries out its latest annual index reconstitution. successfully analized
+[2024-06-30T14:31:02.354+0000] {logging_mixin.py:188} INFO - Summary Oil futures rose Friday, on track to book monthly gains as investors continued to fret over the possibility of a wider Middle East conflict that could threaten flows of crude out of the region. successfully analized
+[2024-06-30T14:31:02.355+0000] {logging_mixin.py:188} INFO - Summary “We don’t need to learn anything about money for our marriage,” one bride says. Actually, they do. successfully analized
+[2024-06-30T14:31:02.356+0000] {logging_mixin.py:188} INFO - Summary Trump Media & Technology Group Corp.’s stock rose 8% early Friday, after widespread criticism of the performance of incumbent President Joe Biden in his first presidential debate with former President Donald Trump. successfully analized
+[2024-06-30T14:31:02.357+0000] {logging_mixin.py:188} INFO - Summary Polling expert Nate Silver says California Gov. Gavin Newsom or Vice President Kamala Harris would be better choices. successfully analized
+[2024-06-30T14:31:02.358+0000] {logging_mixin.py:188} INFO - Summary “At 56, he has few prospects for his future.” successfully analized
+[2024-06-30T14:31:02.359+0000] {logging_mixin.py:188} INFO - Summary “Should I accept that 7%-plus interest rate is the starting rate these days?” successfully analized
+[2024-06-30T14:31:02.361+0000] {logging_mixin.py:188} INFO - Summary How do you keep up the tenacity to fight through red tape when you’re grieving? successfully analized
+[2024-06-30T14:31:02.362+0000] {logging_mixin.py:188} INFO - Summary How will we know if we are OK with the stocks we own? I use a levered concept that has nothing to do with debt. successfully analized
+[2024-06-30T14:31:02.363+0000] {logging_mixin.py:188} INFO - Summary Joe Biden and Donald Trump sparred on inflation and the U.S. economy during the debate. Here are four household budget items where prices are still rising fast. successfully analized
+[2024-06-30T14:31:02.363+0000] {logging_mixin.py:188} INFO - Summary The Wall Street veteran said it’s better to exit any positions quickly and take a manageable loss successfully analized
+[2024-06-30T14:31:02.365+0000] {logging_mixin.py:188} INFO - Summary The 6-bedroom, 7.5-bath residence spans more than 9,200 square feet and sits on about a half-acre in affluent Newton, Mass. successfully analized
+[2024-06-30T14:31:02.366+0000] {logging_mixin.py:188} INFO - Summary Bond yields nudged higher early Friday, amid cautious trading as investors waited for inflation data crucial to the Federal Reserve’s thinking. successfully analized
+[2024-06-30T14:31:02.367+0000] {logging_mixin.py:188} INFO - Summary Global funds have already poured in close to $11 billion into index-eligible bonds since the announcement, with expectations of $20-25 billion more in the next 10 months. successfully analized
+[2024-06-30T14:31:02.368+0000] {logging_mixin.py:188} INFO - Summary CNBC's Jim Cramer told investors why he thinks Amazon is making it hard for Walgreens to succeed. successfully analized
+[2024-06-30T14:31:02.369+0000] {logging_mixin.py:188} INFO - Summary The number of new thematic funds surged in 2021. Now more are closing than launching, according to Strategas. successfully analized
+[2024-06-30T14:31:02.370+0000] {logging_mixin.py:188} INFO - Summary Shares of Infinera Corp. rally after hours Thursday after a $2.3 billion deal with Finnish telecom giant Nokia Corp. successfully analized
+[2024-06-30T14:31:02.371+0000] {logging_mixin.py:188} INFO - Summary Paying almost 40% more than in 2014, the average person spends $16.26 out-of-pocket per prescription, according to the data. successfully analized
+[2024-06-30T14:31:02.372+0000] {logging_mixin.py:188} INFO - Summary Megacap technology companies are again driving the stock-market rally in June, yet hedge funds are dumping them in a reverse of their buying trend earlier this year, according to analysts at Goldman Sachs. successfully analized
+[2024-06-30T14:31:02.373+0000] {logging_mixin.py:188} INFO - Summary Shares of Nike Inc. fell after hours on Thursday after the sneaker maker reported quarterly sales that missed Wall Street’s estimates, saying the results “highlighted challenges” that led the company to adjust its outlook for the fiscal year ahead. successfully analized
+[2024-06-30T14:31:02.374+0000] {logging_mixin.py:188} INFO - Summary United Launch Alliance CEO Tory Bruno announced that his company will bite the bullet and fly Cert-2 without a customer payload. successfully analized
+[2024-06-30T14:31:02.375+0000] {logging_mixin.py:188} INFO - Summary Investment manager VanEck’s application for a spot solana exchange-traded fund is unlikely to be approved anytime soon — but the move is still bullish for cryptocurrencies, industry participants said. successfully analized
+[2024-06-30T14:31:02.376+0000] {logging_mixin.py:188} INFO - Summary Here are ways to spot and protect yourself from a con while job-hunting. successfully analized
+[2024-06-30T14:31:02.377+0000] {logging_mixin.py:188} INFO - Summary Billionaire philanthropist Melinda French Gates shared the best life lesson she learned from the late Charlie Munger, and how anyone can put it into practice. successfully analized
+[2024-06-30T14:31:02.377+0000] {logging_mixin.py:188} INFO - Summary You can improve your emotional intelligence by paying closer attention to your conversations at work, says Juliette Han, a Harvard-trained neuroscientist. successfully analized
+[2024-06-30T14:31:02.378+0000] {logging_mixin.py:188} INFO - Summary The joint venture between AMC, Regal and Cinemark has been best known for bringing classic Hollywood titles, live telecasts and concerts to theaters. successfully analized
+[2024-06-30T14:31:02.379+0000] {logging_mixin.py:188} INFO - Summary Prices for most things continue to rise in 2024, but there are exceptions such as air travel and major appliances. successfully analized
+[2024-06-30T14:31:02.380+0000] {logging_mixin.py:188} INFO - Summary Recent court decisions and the upcoming presidential election have borrowers wondering if they can count on repayment and cancellation initiatives. successfully analized
+[2024-06-30T14:31:02.381+0000] {logging_mixin.py:188} INFO - Summary Donald Trump’s ongoing court cases got some airtime during the first  matchup with President Joe Biden of 2024 successfully analized
+[2024-06-30T14:31:02.382+0000] {logging_mixin.py:188} INFO - Summary Four of the top 10 retirement hot spots are in Florida. The Sunshine State also had the most cities in the top 50 list. successfully analized
+[2024-06-30T14:31:02.383+0000] {logging_mixin.py:188} INFO - Summary A trio of jobs reports will shed light on the state of the U.S. economy. Meanwhile, Constellation Brands is our lone earnings report. successfully analized
+[2024-06-30T14:31:02.384+0000] {logging_mixin.py:188} INFO - Summary Amy Chan always loved writing about relationships. After she launched her first breakup bootcamp, she realized she could focus on them full-time. successfully analized
+[2024-06-30T14:31:02.385+0000] {logging_mixin.py:188} INFO - Summary Three New York boroughs are among the most expensive U.S. places to live, with Manhattan's cost of living more than double the national average. successfully analized
+[2024-06-30T14:31:02.386+0000] {logging_mixin.py:188} INFO - Summary Teyoshe Smith started a charcuterie side hustle from her house. A year later, she left her job at Capital One. She now makes and sells cheeseboards full-time. successfully analized
+[2024-06-30T14:31:02.388+0000] {logging_mixin.py:188} INFO - Summary Consumer interest in waste composting is picking up given climate and farming benefits, but national numbers remains very low, decades behind recycling. successfully analized
+[2024-06-30T14:31:02.389+0000] {logging_mixin.py:188} INFO - Summary When it comes to retirement, Gen Xers are a long way off from their savings goals. But it's not too late to get on track. Here's how to get started. successfully analized
+[2024-06-30T14:31:02.389+0000] {logging_mixin.py:188} INFO - Summary When it comes to hotels or lodging, it's important to communicate what you're willing to spend per night. successfully analized
+[2024-06-30T14:31:02.390+0000] {logging_mixin.py:188} INFO - Summary Kat Holmes has been competing on the international fencing circuit since she was 15. successfully analized
+[2024-06-30T14:31:02.391+0000] {logging_mixin.py:188} INFO - Summary Oppenheimer sees compelling parallels between what Apple is doing in AI and its 1980s Macintosh strategy. successfully analized
+[2024-06-30T14:31:02.393+0000] {logging_mixin.py:188} INFO - Summary Trump’s plans cannot help the retirement safety net. successfully analized
+[2024-06-30T14:31:02.393+0000] {logging_mixin.py:188} INFO - Summary The presidential debate was light on details for everyday Americans in search of answers about their money worries, observers told MarketWatch. successfully analized
+[2024-06-30T14:31:02.395+0000] {logging_mixin.py:188} INFO - Summary The former president claimed without evidence during Thursday’s debate that migrants were “taking Black jobs.” Memes ensued — as did criticism of what one academic called a “fascist” point of view from the candidate. successfully analized
+[2024-06-30T14:31:02.396+0000] {logging_mixin.py:188} INFO - Summary “If I want to rent or sell in the future, am I going to have a tough time?” successfully analized
+[2024-06-30T14:31:02.397+0000] {logging_mixin.py:188} INFO - Summary History indicates that investors should work to separate any partisan enthusiasm or disdain from their portfolio choices, particularly as the battle for the presidency goes through its usual twists and turns. successfully analized
+[2024-06-30T14:31:02.398+0000] {logging_mixin.py:188} INFO - Summary The NFL has been found guilty of violating U.S. antitrust laws in its distribution of “Sunday Ticket,” and could have to pay as much as $14 billion. successfully analized
+[2024-06-30T14:31:02.399+0000] {logging_mixin.py:188} INFO - Summary Consumer-discretionary stocks bounced back in June, raising hopes of a recovery after their tumultuous start to 2024. But market analysts warn that a comeback in this sector could belie underlying consumer weakness amid ongoing concerns over the health of American households. successfully analized
+[2024-06-30T14:31:02.400+0000] {logging_mixin.py:188} INFO - Summary Shares of biotech company Cassava Sciences Inc. plummeted on Friday after a federal grand jury indicted a onetime science advisor to the company and charged him with falsifying data to obtain millions of dollars in government funds successfully analized
+[2024-06-30T14:31:02.401+0000] {logging_mixin.py:188} INFO - Summary The U.S. stock market rallied in the first half of 2024, with the S&P 500 scoring a double-digit gain as it ended June near its all-time closing peak. successfully analized
+[2024-06-30T14:31:02.402+0000] {logging_mixin.py:188} INFO - Summary Boeing Co.’s Starliner spacecraft will remain docked at the International Space Station while the aerospace company and NASA conduct further tests into thruster issues and helium leaks. successfully analized
+[2024-06-30T14:31:02.404+0000] {logging_mixin.py:188} INFO - Summary CNBC's Jim Cramer on Friday analyzed the top ten performers in the S&amp;P 500 over the last quarter. successfully analized
+[2024-06-30T14:31:02.405+0000] {logging_mixin.py:188} INFO - Summary Millions of student-loan borrowers are getting a reprieve from their monthly payments while litigation challenging the Biden administration’s repayment plan makes its way through the court system. successfully analized
+[2024-06-30T14:31:02.406+0000] {logging_mixin.py:188} INFO - Summary “We have heard from customers that we have disappointed them,” the company said. “We have taken this feedback to heart.” successfully analized
+[2024-06-30T14:31:02.407+0000] {logging_mixin.py:188} INFO - Summary Advocates for fair housing on Friday criticized a Supreme Court decision allowing cities to enforce laws restricting sleeping on public property. successfully analized
+[2024-06-30T14:31:02.409+0000] {logging_mixin.py:188} INFO - Summary Just 22% of golfers are people of color and 42% have household incomes of $100,000-plus, according to the National Golf Foundation. successfully analized
+[2024-06-30T14:31:02.410+0000] {logging_mixin.py:188} INFO - Summary Farley said its main competitors are expected to be Chinese automakers such as BYD and an anticipated entry-level car from U.S. EV leader Tesla. successfully analized
+[2024-06-30T14:31:02.411+0000] {logging_mixin.py:188} INFO - Summary The biggest surge in inflation in 40 years could end up deciding the 2024 presidential election — and President Joe Biden and former President Donald Trump each sought to outflank each other on the topic in Thursday’s debate. successfully analized
+[2024-06-30T14:31:02.413+0000] {logging_mixin.py:188} INFO - Summary OpenAI CEO Sam Altman says he leaned heavily on advice from his friend Brian Chesky — CEO and co-founder of Airbnb — after ChatGPT became a global phenomenon. successfully analized
+[2024-06-30T14:31:02.414+0000] {logging_mixin.py:188} INFO - Summary Boeing's crew flight test represents the first time Starliner is carrying people, flying NASA astronauts Butch Wilmore and Suni Williams. successfully analized
+[2024-06-30T14:31:02.415+0000] {logging_mixin.py:188} INFO - Summary Parents “are frankly pissed off and anxious about what the future looks like, and that’s what was so disappointing about last night.” successfully analized
+[2024-06-30T14:31:02.416+0000] {logging_mixin.py:188} INFO - Summary Both candidates missed the chance to discuss plans to fix the program. successfully analized
+[2024-06-30T14:31:02.417+0000] {logging_mixin.py:188} INFO - Summary Americans are facing the most expensive housing market in decades, but neither presidential candidate addressed the affordability crisis in detail on Thursday. successfully analized
+[2024-06-30T14:31:02.418+0000] {logging_mixin.py:188} INFO - Summary Move over, J.P. Morgan — we have a new contender for most apocalyptic stock-market forecast. successfully analized
+[2024-06-30T14:31:02.419+0000] {logging_mixin.py:188} INFO - Summary Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading. successfully analized
+[2024-06-30T14:31:02.420+0000] {logging_mixin.py:188} INFO - Summary Health officials are ramping up their response to H5N1 — but this is not COVID 2.0, experts say. successfully analized
+[2024-06-30T14:31:02.421+0000] {logging_mixin.py:188} INFO - Summary One of the top takeaways from Thursday night’s televised debate between President Joe Biden and his Republican challenger Donald Trump is that the U.S. faces little prospect of any fiscal restraint in the years ahead no matter who wins the Nov. 5 election. successfully analized
+[2024-06-30T14:31:02.422+0000] {logging_mixin.py:188} INFO - Summary President Joe Biden emerged bruised from his first presidential debate with Donald Trump, raising fears about his age and ability to serve another term. successfully analized
+[2024-06-30T14:31:02.423+0000] {logging_mixin.py:188} INFO - Summary The SEC on Friday filed sued against blockchain software company Consensys, alleging the improper sale of securities. successfully analized
+[2024-06-30T14:31:02.424+0000] {logging_mixin.py:188} INFO - Summary The campaigns of President Joe Biden and former President Donald Trump said Friday they had each raised millions of dollars around their first debate Thursday. successfully analized
+[2024-06-30T14:31:02.426+0000] {logging_mixin.py:188} INFO - Summary “Abortion is deeply rooted in the class system,” a law professor tells MarketWatch two years after the end of Roe v. Wade successfully analized
+[2024-06-30T14:31:02.427+0000] {logging_mixin.py:188} INFO - Summary The Supreme Court ruling overturned the case known as Chevron v. Natural Resources Defense Council, reducing the authority of federal regulatory agencies. successfully analized
+[2024-06-30T14:31:02.428+0000] {logging_mixin.py:188} INFO - Summary Also: Stock-market winners and losers for the first half of 2024, a possible AI infrastructure bubble and personal financial advice successfully analized
+[2024-06-30T14:31:02.430+0000] {logging_mixin.py:188} INFO - Summary While Friday’s encouraging inflation data might be helpful to President Joe Biden, the spotlight at the moment remains on his widely panned performance in a debate against presumptive Republican nominee Donald Trump. successfully analized
+[2024-06-30T14:31:02.431+0000] {logging_mixin.py:188} INFO - Summary Critics say the opposite: the longer policy takes, the more it looks like it isn’t working successfully analized
+[2024-06-30T14:31:02.432+0000] {logging_mixin.py:188} INFO - Summary A select handful of health insurance names popped on Friday following the first debate between President Joe Biden and former President Donald Trump. successfully analized
+[2024-06-30T14:31:02.434+0000] {logging_mixin.py:188} INFO - Summary JPMorgan ups data center owner to outperform as a ‘substantial beneficiary of cloud and AI demand for data center capacity.’ successfully analized
+[2024-06-30T14:31:02.435+0000] {logging_mixin.py:188} INFO - Summary Pixar’s “Inside Out 2” is poised to become the first film to achieve ticket sales of more than $1 billion this weekend, and will be the first film since “Barbie” to achieve that threshold. successfully analized
+[2024-06-30T14:31:02.436+0000] {logging_mixin.py:188} INFO - Summary The Investing Club holds its "Morning Meeting" every weekday at 10:20 a.m. ET. successfully analized
+[2024-06-30T14:31:02.437+0000] {logging_mixin.py:188} INFO - Summary Besides Nvidia itself, there are only four U.S. companies with valuations greater than the amount of Nvidia’s market-cap gains. successfully analized
+[2024-06-30T14:31:02.439+0000] {logging_mixin.py:188} INFO - Summary Two sectors are expected to have an outsized impact on Russell's indexes in the year ahead. successfully analized
+[2024-06-30T14:31:02.440+0000] {logging_mixin.py:188} INFO - Summary Barbara Corcoran is the founder and former owner of the firm, The Corcoran Group, a real estate company she founded in 1973 and sold in 2001 for $66 million. successfully analized
+[2024-06-30T14:31:02.441+0000] {logging_mixin.py:188} INFO - Summary Shares of Chewy Inc. are down 9.7% Friday after spiking Thursday in the wake of a cryptic post from influential trader Keith Gill, also known as Roaring Kitty. successfully analized
+[2024-06-30T14:31:02.442+0000] {logging_mixin.py:188} INFO - Summary Social media has opened up the door to learn about investing. But you might want to think twice before you follow the advice you see. successfully analized
+[2024-06-30T14:31:02.444+0000] {logging_mixin.py:188} INFO - Summary A new CNBC Delivering Alpha Stock Survey of 400 money managers shows they think Trump is better for stocks, but they're split where the market is heading. successfully analized
+[2024-06-30T14:31:02.445+0000] {logging_mixin.py:188} INFO - Summary The S&P 500 is up nearly 16% so far this year with dividends reinvested. Artificial intelligence has been the big theme driving gains for Big Tech, especially Nvidia Corp. But 38% of the S&P 500 have had negative returns during the first half of 2024. successfully analized
+[2024-06-30T14:31:02.446+0000] {logging_mixin.py:188} INFO - Summary President Biden now has a 19% chance of being re-elected, according to betting markets tracked by RealClearPolitics. That’s down from 36% Wednesday, and is the lowest level ever in RCP’s data. successfully analized
+[2024-06-30T14:31:02.447+0000] {logging_mixin.py:188} INFO - Summary Consumers were slightly more optimistic about the economy at the end of June, but the effects of high inflation in the past few years still weighed on their minds. successfully analized
+[2024-06-30T14:31:02.448+0000] {logging_mixin.py:188} INFO - Summary Sora Lee has learned a number of financial lessons on her way to a huge $400,000 salary. But this one money move proved to be her biggest regret. successfully analized
+[2024-06-30T14:31:02.449+0000] {logging_mixin.py:188} INFO - Summary Index rises to 47.4, compared with a forecast of 40 successfully analized
+[2024-06-30T14:31:02.451+0000] {logging_mixin.py:188} INFO - Summary One Rosenblatt analyst recommends that investors take a pause on Alphabet shares given changes around AI and the broad ad market. successfully analized
+[2024-06-30T14:31:02.452+0000] {logging_mixin.py:188} INFO - Summary Wall Street is on track for another day of gains following the release of the Fed's preferred inflation gauge for May. successfully analized
+[2024-06-30T14:31:02.453+0000] {logging_mixin.py:188} INFO - Summary Justine Parker owns Toes N Sand Properties, a rental management company in Orange Beach, Alabama that brought in about $500,000 in 2023. successfully analized
+[2024-06-30T14:31:02.454+0000] {logging_mixin.py:188} INFO - Summary “Should I pay off the mortgage or go with the plan to make money through investments?” successfully analized
+[2024-06-30T14:31:02.455+0000] {logging_mixin.py:188} INFO - Summary Tomasz Piskorksi of Columbia Business School says Fed didn’t include scenarios that killed Silicon Valley Bank, First Republic successfully analized
+[2024-06-30T14:31:02.456+0000] {logging_mixin.py:188} INFO - Summary President Joe Biden will face “incredible pressure to step aside” following his shaky debate performance against Donald Trump Thursday night, though the decision will ultimately be his alone, said Isaac Boltansky, director of policy research at BTIG, in a note. successfully analized
+[2024-06-30T14:31:02.457+0000] {logging_mixin.py:188} INFO - Summary A list of 20 standout stocks during the first half of 2024 includes names riding the AI wave, but also a few surprises. successfully analized
+[2024-06-30T14:31:02.458+0000] {logging_mixin.py:188} INFO - Summary Nike reported fourth-quarter results after market close Thursday successfully analized
+[2024-06-30T14:31:02.459+0000] {logging_mixin.py:188} INFO - Summary Fisker Inc. said Friday it has issued a voluntary recall of 12,523 vehicles in North America and Europe to address an issue involving the outer door handles. successfully analized
+[2024-06-30T14:31:02.460+0000] {logging_mixin.py:188} INFO - Summary Some Democrats said President Joe Biden needs to exit the White House race against Donald Trump after his debate performance. DJT stock may benefit. successfully analized
+[2024-06-30T14:31:02.461+0000] {logging_mixin.py:188} INFO - Summary The gifts stem from a schedule for annual grants that Buffett drew up in 2006. successfully analized
+[2024-06-30T14:31:02.462+0000] {logging_mixin.py:188} INFO - Summary The vaccine, called mResvia, has already been approved by the U.S. Food and Drug Administration, becoming Moderna’s second approved product after its COVID-19 vaccine, Spikevax. successfully analized
+[2024-06-30T14:31:02.463+0000] {logging_mixin.py:188} INFO - Summary This year’s furious rally in technology and megacap stocks is set to leave its mark on Friday when FTSE Russell carries out its latest annual index reconstitution. successfully analized
+[2024-06-30T14:31:02.464+0000] {logging_mixin.py:188} INFO - Summary Oil futures rose Friday, on track to book monthly gains as investors continued to fret over the possibility of a wider Middle East conflict that could threaten flows of crude out of the region. successfully analized
+[2024-06-30T14:31:02.466+0000] {logging_mixin.py:188} INFO - Summary “We don’t need to learn anything about money for our marriage,” one bride says. Actually, they do. successfully analized
+[2024-06-30T14:31:02.467+0000] {logging_mixin.py:188} INFO - Summary Trump Media & Technology Group Corp.’s stock rose 8% early Friday, after widespread criticism of the performance of incumbent President Joe Biden in his first presidential debate with former President Donald Trump. successfully analized
+[2024-06-30T14:31:02.468+0000] {logging_mixin.py:188} INFO - Summary Polling expert Nate Silver says California Gov. Gavin Newsom or Vice President Kamala Harris would be better choices. successfully analized
+[2024-06-30T14:31:02.469+0000] {logging_mixin.py:188} INFO - Summary “At 56, he has few prospects for his future.” successfully analized
+[2024-06-30T14:31:02.470+0000] {logging_mixin.py:188} INFO - Summary “Should I accept that 7%-plus interest rate is the starting rate these days?” successfully analized
+[2024-06-30T14:31:02.471+0000] {logging_mixin.py:188} INFO - Summary How do you keep up the tenacity to fight through red tape when you’re grieving? successfully analized
+[2024-06-30T14:31:02.472+0000] {logging_mixin.py:188} INFO - Summary How will we know if we are OK with the stocks we own? I use a levered concept that has nothing to do with debt. successfully analized
+[2024-06-30T14:31:02.473+0000] {logging_mixin.py:188} INFO - Summary Joe Biden and Donald Trump sparred on inflation and the U.S. economy during the debate. Here are four household budget items where prices are still rising fast. successfully analized
+[2024-06-30T14:31:02.474+0000] {logging_mixin.py:188} INFO - Summary The Wall Street veteran said it’s better to exit any positions quickly and take a manageable loss successfully analized
+[2024-06-30T14:31:02.475+0000] {logging_mixin.py:188} INFO - Summary The 6-bedroom, 7.5-bath residence spans more than 9,200 square feet and sits on about a half-acre in affluent Newton, Mass. successfully analized
+[2024-06-30T14:31:02.476+0000] {logging_mixin.py:188} INFO - Summary Bond yields nudged higher early Friday, amid cautious trading as investors waited for inflation data crucial to the Federal Reserve’s thinking. successfully analized
+[2024-06-30T14:31:02.477+0000] {logging_mixin.py:188} INFO - Summary Global funds have already poured in close to $11 billion into index-eligible bonds since the announcement, with expectations of $20-25 billion more in the next 10 months. successfully analized
+[2024-06-30T14:31:02.478+0000] {logging_mixin.py:188} INFO - Summary CNBC's Jim Cramer told investors why he thinks Amazon is making it hard for Walgreens to succeed. successfully analized
+[2024-06-30T14:31:02.479+0000] {logging_mixin.py:188} INFO - Summary The number of new thematic funds surged in 2021. Now more are closing than launching, according to Strategas. successfully analized
+[2024-06-30T14:31:02.480+0000] {logging_mixin.py:188} INFO - Summary Shares of Infinera Corp. rally after hours Thursday after a $2.3 billion deal with Finnish telecom giant Nokia Corp. successfully analized
+[2024-06-30T14:31:02.481+0000] {logging_mixin.py:188} INFO - Summary Paying almost 40% more than in 2014, the average person spends $16.26 out-of-pocket per prescription, according to the data. successfully analized
+[2024-06-30T14:31:02.482+0000] {logging_mixin.py:188} INFO - Summary Megacap technology companies are again driving the stock-market rally in June, yet hedge funds are dumping them in a reverse of their buying trend earlier this year, according to analysts at Goldman Sachs. successfully analized
+[2024-06-30T14:31:02.483+0000] {logging_mixin.py:188} INFO - Summary Shares of Nike Inc. fell after hours on Thursday after the sneaker maker reported quarterly sales that missed Wall Street’s estimates, saying the results “highlighted challenges” that led the company to adjust its outlook for the fiscal year ahead. successfully analized
+[2024-06-30T14:31:02.484+0000] {logging_mixin.py:188} INFO - Summary United Launch Alliance CEO Tory Bruno announced that his company will bite the bullet and fly Cert-2 without a customer payload. successfully analized
+[2024-06-30T14:31:02.486+0000] {logging_mixin.py:188} INFO - Summary Investment manager VanEck’s application for a spot solana exchange-traded fund is unlikely to be approved anytime soon — but the move is still bullish for cryptocurrencies, industry participants said. successfully analized
+[2024-06-30T14:31:02.498+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (127.0.0.1), port 5436 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5436 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/plugins/sentiment_analysis_loader.py", line 19, in run
+    postgres_loader.load(sentiment_output, "sentiment_news_analysis")
+  File "/opt/airflow/plugins/postgres_loader.py", line 13, in load
+    conn = engine.connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5436 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5436 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-06-30T14:31:02.523+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=dag_sentiment_analysis, task_id=sa_load, execution_date=20240630T141647, start_date=20240630T143057, end_date=20240630T143102
+[2024-06-30T14:31:02.552+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 75 for task sa_load ((psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5436 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5436 failed: Cannot assign requested address
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 211)
+[2024-06-30T14:31:02.586+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-06-30T14:31:02.605+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

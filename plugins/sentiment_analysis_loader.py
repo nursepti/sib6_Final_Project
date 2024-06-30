@@ -4,9 +4,9 @@ from sentiment_analysis import SentimentAnalysis
 import postgres_loader
 
 def run():
-    db = mongodb_loader.get_data("news", "finnnhub_news")
+    db = mongodb_loader.get_data("news", "finnhub_news")
 
-    news = [x for x in db.finnnhub_news.find()]
+    news = [x for x in db.finnhub_news.find()]
 
     output = []
     for news_summary in news:

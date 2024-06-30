@@ -10,17 +10,17 @@ import sentiment_analysis_loader
 default_args = {
     'owner': 'de-team',
     'depends_on_past': False,
-    'start_date': datetime(2024, 6, 24),
+    'start_date': datetime(2023, 9, 21),
     'wait_for_downstream': False,
     'retries': 1,
     'retry_delay': timedelta(minutes=5),
     'sla': timedelta(days=1),
 }
 
-schedule_interval = '0 * * * *'
+schedule_interval = '0 0 * * *'
 
 with DAG(
-    'sentiment_analysis',
+    'dag_sentiment_analysis',
     default_args=default_args,
     schedule_interval=schedule_interval,
     catchup=False,

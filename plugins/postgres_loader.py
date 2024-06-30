@@ -4,10 +4,10 @@ from sqlalchemy import create_engine
 def load(data, table_name):
     user = 'airflow'
     passwd = 'airflow'
-    hostname = 'localhost'
+    hostname = 'postgres'
     database = 'data_warehouse'
 
-    conn_string = f'postgresql://{user}:{passwd}@{hostname}:5436/{database}'
+    conn_string = f'postgresql://{user}:{passwd}@{hostname}:5432/{database}'
 
     engine = create_engine(conn_string)
     conn = engine.connect()

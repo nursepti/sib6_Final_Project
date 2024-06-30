@@ -9,5 +9,3 @@ env/
 
 config.py
 
-# Ignore logs directory
-logs/

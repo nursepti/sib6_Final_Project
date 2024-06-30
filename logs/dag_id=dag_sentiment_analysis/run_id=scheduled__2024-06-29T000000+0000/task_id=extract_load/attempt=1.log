@@ -1,0 +1,99 @@
+[2024-06-30T13:12:22.390+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-29T00:00:00+00:00 [queued]>
+[2024-06-30T13:12:22.417+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-29T00:00:00+00:00 [queued]>
+[2024-06-30T13:12:22.418+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-06-30T13:12:22.462+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): extract_load> on 2024-06-29 00:00:00+00:00
+[2024-06-30T13:12:22.484+0000] {standard_task_runner.py:60} INFO - Started process 209 to run task
+[2024-06-30T13:12:22.490+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_sentiment_analysis', 'extract_load', 'scheduled__2024-06-29T00:00:00+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/dag_sentiment_analysis.py', '--cfg-path', '/tmp/tmpjv1uqq3o']
+[2024-06-30T13:12:22.497+0000] {standard_task_runner.py:88} INFO - Job 49: Subtask extract_load
+[2024-06-30T13:12:22.538+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-06-30T13:12:22.638+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-29T00:00:00+00:00 [running]> on host a9ab29ad88be
+[2024-06-30T13:12:22.837+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='de-team' AIRFLOW_CTX_DAG_ID='dag_sentiment_analysis' AIRFLOW_CTX_TASK_ID='extract_load' AIRFLOW_CTX_EXECUTION_DATE='2024-06-29T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-29T00:00:00+00:00'
+[2024-06-30T13:13:33.448+0000] {logging_mixin.py:188} INFO - SSL handshake failed: ac-mukte2i-shard-00-01.pn34g58.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1007) (configured timeouts: socketTimeoutMS: 60000.0ms, connectTimeoutMS: 60000.0ms),SSL handshake failed: ac-mukte2i-shard-00-00.pn34g58.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1007) (configured timeouts: socketTimeoutMS: 60000.0ms, connectTimeoutMS: 60000.0ms),SSL handshake failed: ac-mukte2i-shard-00-02.pn34g58.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1007) (configured timeouts: socketTimeoutMS: 60000.0ms, connectTimeoutMS: 60000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 668159de72064e9a56cb85f1, topology_type: Unknown, servers: [<ServerDescription ('ac-mukte2i-shard-00-00.pn34g58.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-mukte2i-shard-00-00.pn34g58.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1007) (configured timeouts: socketTimeoutMS: 60000.0ms, connectTimeoutMS: 60000.0ms)')>, <ServerDescription ('ac-mukte2i-shard-00-01.pn34g58.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-mukte2i-shard-00-01.pn34g58.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1007) (configured timeouts: socketTimeoutMS: 60000.0ms, connectTimeoutMS: 60000.0ms)')>, <ServerDescription ('ac-mukte2i-shard-00-02.pn34g58.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-mukte2i-shard-00-02.pn34g58.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1007) (configured timeouts: socketTimeoutMS: 60000.0ms, connectTimeoutMS: 60000.0ms)')>]>
+[2024-06-30T13:13:33.469+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/plugins/finnhub_mongodb_loader.py", line 7, in extract_load
+    collection = mongodb_loader.load('news', 'finnhub_news')
+  File "/opt/airflow/plugins/mongodb_loader.py", line 29, in load
+    db = mongo_client[database]
+TypeError: 'NoneType' object is not subscriptable
+[2024-06-30T13:13:33.515+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_sentiment_analysis, task_id=extract_load, execution_date=20240629T000000, start_date=20240630T131222, end_date=20240630T131333
+[2024-06-30T13:13:33.589+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 49 for task extract_load ('NoneType' object is not subscriptable; 209)
+[2024-06-30T13:13:33.639+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-06-30T13:13:33.760+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-30T14:16:45.104+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-29T00:00:00+00:00 [queued]>
+[2024-06-30T14:16:45.118+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-29T00:00:00+00:00 [queued]>
+[2024-06-30T14:16:45.119+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-06-30T14:16:45.140+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): extract_load> on 2024-06-29 00:00:00+00:00
+[2024-06-30T14:16:45.160+0000] {standard_task_runner.py:60} INFO - Started process 272 to run task
+[2024-06-30T14:16:45.166+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_sentiment_analysis', 'extract_load', 'scheduled__2024-06-29T00:00:00+00:00', '--job-id', '67', '--raw', '--subdir', 'DAGS_FOLDER/dag_sentiment_analysis.py', '--cfg-path', '/tmp/tmpl7ym8ez8']
+[2024-06-30T14:16:45.170+0000] {standard_task_runner.py:88} INFO - Job 67: Subtask extract_load
+[2024-06-30T14:16:45.195+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-06-30T14:16:45.246+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-29T00:00:00+00:00 [running]> on host 7c9851f56a65
+[2024-06-30T14:16:45.383+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='de-team' AIRFLOW_CTX_DAG_ID='dag_sentiment_analysis' AIRFLOW_CTX_TASK_ID='extract_load' AIRFLOW_CTX_EXECUTION_DATE='2024-06-29T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-29T00:00:00+00:00'
+[2024-06-30T14:17:08.455+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/plugins/finnhub_mongodb_loader.py", line 7, in extract_load
+    collection = mongodb_loader.load('news', 'finnhub_news')
+  File "/opt/airflow/plugins/mongodb_loader.py", line 26, in load
+    mongo_client = get_mongo_client(mongo_uri)
+  File "/opt/airflow/plugins/mongodb_loader.py", line 8, in get_mongo_client
+    client = pymongo.MongoClient(mongo_uri)
+  File "/home/airflow/.local/lib/python3.10/site-packages/pymongo/mongo_client.py", line 774, in __init__
+    res = uri_parser.parse_uri(
+  File "/home/airflow/.local/lib/python3.10/site-packages/pymongo/uri_parser.py", line 543, in parse_uri
+    dns_options = dns_resolver.get_options()
+  File "/home/airflow/.local/lib/python3.10/site-packages/pymongo/srv_resolver.py", line 99, in get_options
+    raise ConfigurationError(str(exc)) from None
+pymongo.errors.ConfigurationError: The resolution lifetime expired after 21.123 seconds: Server Do53:127.0.0.11@53 answered The DNS operation timed out.; Server Do53:127.0.0.11@53 answered The DNS operation timed out.; Server Do53:127.0.0.11@53 answered The DNS operation timed out.; Server Do53:127.0.0.11@53 answered The DNS operation timed out.; Server Do53:127.0.0.11@53 answered The DNS operation timed out.; Server Do53:127.0.0.11@53 answered The DNS operation timed out.; Server Do53:127.0.0.11@53 answered The DNS operation timed out.
+[2024-06-30T14:17:08.482+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_sentiment_analysis, task_id=extract_load, execution_date=20240629T000000, start_date=20240630T141645, end_date=20240630T141708
+[2024-06-30T14:17:08.501+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 67 for task extract_load (The resolution lifetime expired after 21.123 seconds: Server Do53:127.0.0.11@53 answered The DNS operation timed out.; Server Do53:127.0.0.11@53 answered The DNS operation timed out.; Server Do53:127.0.0.11@53 answered The DNS operation timed out.; Server Do53:127.0.0.11@53 answered The DNS operation timed out.; Server Do53:127.0.0.11@53 answered The DNS operation timed out.; Server Do53:127.0.0.11@53 answered The DNS operation timed out.; Server Do53:127.0.0.11@53 answered The DNS operation timed out.; 272)
+[2024-06-30T14:17:08.547+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-06-30T14:17:08.571+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-30T15:19:37.694+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-29T00:00:00+00:00 [queued]>
+[2024-06-30T15:19:37.724+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-29T00:00:00+00:00 [queued]>
+[2024-06-30T15:19:37.728+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-06-30T15:19:37.777+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): extract_load> on 2024-06-29 00:00:00+00:00
+[2024-06-30T15:19:37.798+0000] {standard_task_runner.py:60} INFO - Started process 308 to run task
+[2024-06-30T15:19:37.813+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_sentiment_analysis', 'extract_load', 'scheduled__2024-06-29T00:00:00+00:00', '--job-id', '77', '--raw', '--subdir', 'DAGS_FOLDER/dag_sentiment_analysis.py', '--cfg-path', '/tmp/tmpd_k0n1dz']
+[2024-06-30T15:19:37.818+0000] {standard_task_runner.py:88} INFO - Job 77: Subtask extract_load
+[2024-06-30T15:19:37.859+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-06-30T15:19:37.927+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-29T00:00:00+00:00 [running]> on host c9674c7692f3
+[2024-06-30T15:19:38.163+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='de-team' AIRFLOW_CTX_DAG_ID='dag_sentiment_analysis' AIRFLOW_CTX_TASK_ID='extract_load' AIRFLOW_CTX_EXECUTION_DATE='2024-06-29T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-29T00:00:00+00:00'
+[2024-06-30T15:19:47.698+0000] {logging_mixin.py:188} INFO - Pinged your deployment. You successfully connected to MongoDB!
+[2024-06-30T15:19:49.811+0000] {logging_mixin.py:188} INFO - Successfully load news to MongoDB
+[2024-06-30T15:19:49.854+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-06-30T15:19:50.034+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=dag_sentiment_analysis, task_id=extract_load, execution_date=20240629T000000, start_date=20240630T151937, end_date=20240630T151950
+[2024-06-30T15:19:50.457+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-06-30T15:19:50.961+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-30T15:34:43.246+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-29T00:00:00+00:00 [queued]>
+[2024-06-30T15:34:43.259+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-29T00:00:00+00:00 [queued]>
+[2024-06-30T15:34:43.259+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-06-30T15:34:43.278+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): extract_load> on 2024-06-29 00:00:00+00:00
+[2024-06-30T15:34:43.293+0000] {standard_task_runner.py:60} INFO - Started process 214 to run task
+[2024-06-30T15:34:43.297+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_sentiment_analysis', 'extract_load', 'scheduled__2024-06-29T00:00:00+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/dag_sentiment_analysis.py', '--cfg-path', '/tmp/tmpg74pljwj']
+[2024-06-30T15:34:43.300+0000] {standard_task_runner.py:88} INFO - Job 84: Subtask extract_load
+[2024-06-30T15:34:43.326+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-06-30T15:34:43.374+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-29T00:00:00+00:00 [running]> on host ed9c97bc58fd
+[2024-06-30T15:34:43.503+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='de-team' AIRFLOW_CTX_DAG_ID='dag_sentiment_analysis' AIRFLOW_CTX_TASK_ID='extract_load' AIRFLOW_CTX_EXECUTION_DATE='2024-06-29T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-29T00:00:00+00:00'
+[2024-06-30T15:34:52.162+0000] {logging_mixin.py:188} INFO - Pinged your deployment. You successfully connected to MongoDB!
+[2024-06-30T15:34:53.962+0000] {logging_mixin.py:188} INFO - Successfully load news to MongoDB
+[2024-06-30T15:34:53.963+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-06-30T15:34:53.976+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=dag_sentiment_analysis, task_id=extract_load, execution_date=20240629T000000, start_date=20240630T153443, end_date=20240630T153453
+[2024-06-30T15:34:54.019+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-06-30T15:34:54.045+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

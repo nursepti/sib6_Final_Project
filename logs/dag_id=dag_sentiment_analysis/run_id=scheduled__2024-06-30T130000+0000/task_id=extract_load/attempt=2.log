@@ -1,0 +1,29 @@
+[2024-06-30T14:03:19.194+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-30T13:00:00+00:00 [queued]>
+[2024-06-30T14:03:19.212+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-30T13:00:00+00:00 [queued]>
+[2024-06-30T14:03:19.213+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 3
+[2024-06-30T14:03:19.246+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): extract_load> on 2024-06-30 13:00:00+00:00
+[2024-06-30T14:03:19.261+0000] {standard_task_runner.py:60} INFO - Started process 316 to run task
+[2024-06-30T14:03:19.265+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_sentiment_analysis', 'extract_load', 'scheduled__2024-06-30T13:00:00+00:00', '--job-id', '63', '--raw', '--subdir', 'DAGS_FOLDER/dag_sentiment_analysis.py', '--cfg-path', '/tmp/tmpii11kcyj']
+[2024-06-30T14:03:19.268+0000] {standard_task_runner.py:88} INFO - Job 63: Subtask extract_load
+[2024-06-30T14:03:19.304+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-06-30T14:03:19.352+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-30T13:00:00+00:00 [running]> on host 7c9851f56a65
+[2024-06-30T14:03:19.528+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='de-team' AIRFLOW_CTX_DAG_ID='dag_sentiment_analysis' AIRFLOW_CTX_TASK_ID='extract_load' AIRFLOW_CTX_EXECUTION_DATE='2024-06-30T13:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-30T13:00:00+00:00'
+[2024-06-30T14:03:19.532+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/plugins/finnhub_mongodb_loader.py", line 5, in extract_load
+    news = finnhub_loader.scrape_news()
+  File "/opt/airflow/plugins/finnhub_loader.py", line 5, in scrape_news
+    finnhub_client = finnhub.Client(API_KEY = "cponss1r01qiv403hs00cponss1r01qiv403hs0g")
+TypeError: Client.__init__() got an unexpected keyword argument 'API_KEY'
+[2024-06-30T14:03:19.554+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_sentiment_analysis, task_id=extract_load, execution_date=20240630T130000, start_date=20240630T140319, end_date=20240630T140319
+[2024-06-30T14:03:19.582+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 63 for task extract_load (Client.__init__() got an unexpected keyword argument 'API_KEY'; 316)
+[2024-06-30T14:03:19.608+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-06-30T14:03:19.638+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

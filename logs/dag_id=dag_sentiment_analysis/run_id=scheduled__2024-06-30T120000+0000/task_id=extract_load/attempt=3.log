@@ -1,0 +1,16 @@
+[2024-06-30T13:47:52.197+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-30T12:00:00+00:00 [queued]>
+[2024-06-30T13:47:52.226+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-30T12:00:00+00:00 [queued]>
+[2024-06-30T13:47:52.228+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 3
+[2024-06-30T13:47:52.279+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): extract_load> on 2024-06-30 12:00:00+00:00
+[2024-06-30T13:47:52.290+0000] {standard_task_runner.py:60} INFO - Started process 671 to run task
+[2024-06-30T13:47:52.294+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dag_sentiment_analysis', 'extract_load', 'scheduled__2024-06-30T12:00:00+00:00', '--job-id', '57', '--raw', '--subdir', 'DAGS_FOLDER/dag_sentiment_analysis.py', '--cfg-path', '/tmp/tmpx1gl4kh2']
+[2024-06-30T13:47:52.298+0000] {standard_task_runner.py:88} INFO - Job 57: Subtask extract_load
+[2024-06-30T13:47:52.323+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.10/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-06-30T13:47:52.389+0000] {task_command.py:423} INFO - Running <TaskInstance: dag_sentiment_analysis.extract_load scheduled__2024-06-30T12:00:00+00:00 [running]> on host a9ab29ad88be
+[2024-06-30T13:47:52.526+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='de-team' AIRFLOW_CTX_DAG_ID='dag_sentiment_analysis' AIRFLOW_CTX_TASK_ID='extract_load' AIRFLOW_CTX_EXECUTION_DATE='2024-06-30T12:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-30T12:00:00+00:00'
+[2024-06-30T13:48:22.575+0000] {logging_mixin.py:188} INFO - Pinged your deployment. You successfully connected to MongoDB!
+[2024-06-30T13:48:22.985+0000] {logging_mixin.py:188} INFO - Successfully load news to MongoDB
+[2024-06-30T13:48:22.987+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-06-30T13:48:23.016+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=dag_sentiment_analysis, task_id=extract_load, execution_date=20240630T120000, start_date=20240630T134752, end_date=20240630T134823
+[2024-06-30T13:48:23.064+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-06-30T13:48:23.106+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
